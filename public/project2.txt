@@ -1,0 +1,59 @@
+1. Which of the following is an example of a lightweight virtual machine (MicroVM) technology?
+A) Docker
+B) Podman
+C) Firecracker*
+D) containerd
+
+2. What is the primary motivation for using lightweight virtualization in Edge and IoT deployments?
+A) High memory usage and complex management
+B) Low-footprint, secure isolation*
+C) Increased boot time for better stability
+D) Support for heavy machine learning workloads
+
+3. Which container runtime is explicitly mentioned in the project description?
+A) rkt
+B) LXC
+C) containerd*
+D) cri-o
+
+4. Which dimension is NOT listed as a key comparison criterion between containers and MicroVMs?
+A) Startup time
+B) Memory footprint
+C) I/O performance
+D) Programming language support*
+
+5. What does the term "kernel attack surface" refer to in the context of security analysis?
+A) The total size of the OS source code
+B) The number of user accounts on a system
+C) The exposed interfaces and vulnerabilities in the kernel that attackers can exploit*
+D) The amount of RAM allocated to the kernel
+
+6. Which type of benchmark workload is suggested for the experimental comparison?
+A) Video rendering and 3D animation pipelines
+B) Database replication across multiple continents
+C) Redis, Nginx, and serverless-style workloads*
+D) Batch data archival and tape backup
+
+7. What concept involves selecting isolation technology based on workload characteristics?
+A) Resource pooling
+B) Live migration
+C) Decision framework for isolation technology*
+D) Kernel bypass networking
+
+8. Which statistical analysis requirement is emphasized for reproducibility?
+A) Using proprietary benchmarking software
+B) Running tests only on cloud infrastructure
+C) Standardized benchmarks with reproducible setup*
+D) Comparing at least ten different hypervisors
+
+9. Which edge computing use case drives the need for fast, inexpensive isolation?
+A) Long-running batch jobs in data centers
+B) Serverless functions at the edge*
+C) High-performance computing clusters
+D) Legacy enterprise application hosting
+
+10. What is a distinguishing security characteristic analyzed for containers vs. MicroVMs?
+A) Support for IPv6 routing protocols
+B) Isolation guarantees and kernel attack surface*
+C) Support for GPU passthrough
+D) Compatibility with Windows drivers

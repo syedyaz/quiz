@@ -1,0 +1,59 @@
+1. What is the primary privacy advantage of Federated Learning over centralized machine learning?
+A) It encrypts all model weights using AES-256 before storage
+B) It trains models entirely in the cloud without local data
+C) Edge nodes share only model updates rather than raw data*
+D) It deletes training data immediately after each round
+
+2. Which aggregation algorithm is explicitly mentioned for combining model updates in a Federated Learning pipeline?
+A) Gradient Boosting
+B) FedAvg*
+C) Backpropagation
+D) Expectation-Maximization
+
+3. What does the term "non-IID data" refer to in the context of Federated Learning experiments?
+A) Data that is encrypted using non-invertible functions
+B) Data that is identically distributed across all edge nodes
+C) Data distributed heterogeneously across nodes, not following the same statistical distribution*
+D) Data stored in a non-relational database format
+
+4. Which dataset is suggested for network intrusion-based anomaly detection experiments?
+A) MNIST
+B) ImageNet
+C) UNSW-NB15*
+D) CIFAR-10
+
+5. Which Python framework is mentioned for implementing a Federated Learning simulation?
+A) Scikit-learn
+B) PyTorch Lightning
+C) Flower (flwr)*
+D) Keras Tuner
+
+6. What type of neural network model is suggested for anomaly detection in the federated setting?
+A) Convolutional Neural Network (CNN)
+B) Generative Adversarial Network (GAN)
+C) Long Short-Term Memory (LSTM)*
+D) Transformer with self-attention heads
+
+7. What is "differential privacy" as mentioned in the project's optional enhancement?
+A) A technique to speed up gradient computation on edge devices
+B) A cryptographic protocol for secure key exchange between nodes
+C) A mechanism that adds controlled noise to model updates to protect individual data privacy*
+D) A method of splitting a neural network across multiple edge nodes
+
+8. Which metric is listed for evaluating the efficiency of communication in the federated system?
+A) CPU clock cycles per training epoch
+B) Communication overhead*
+C) GPU memory utilization per node
+D) Number of layers in the neural network
+
+9. What is the role of the "central aggregator" in a Federated Learning architecture?
+A) It stores raw training data from all edge nodes for centralized processing
+B) It collects and combines local model updates from edge nodes into a global model*
+C) It monitors edge nodes for security breaches and shuts down compromised nodes
+D) It distributes labeled training datasets to each edge node before training begins
+
+10. Which real-world application domain is explicitly cited as a target for federated anomaly detection in edge environments?
+A) High-frequency stock trading platforms
+B) Augmented reality gaming systems
+C) Smart cities and industrial IoT*
+D) Desktop productivity software suites

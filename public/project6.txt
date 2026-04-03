@@ -1,0 +1,59 @@
+1. What does FaaS stand for?
+A) Fiber as a Service
+B) Function as a Service*
+C) Firmware as a Service
+D) Failover as a Service
+
+2. What is "cold start latency" in the context of serverless platforms?
+A) The time for a server to shut down cleanly
+B) The delay incurred when starting a new function instance from scratch*
+C) The network latency introduced by geographic distance
+D) The time taken to compile and link a serverless function's code
+
+3. Which major serverless platform is mentioned in the project description?
+A) Azure Functions only
+B) Google Cloud Run only
+C) AWS Lambda*
+D) IBM Cloud Functions only
+
+4. What OS-level optimization technique is proposed for reducing cold start latency?
+A) Increasing CPU frequency scaling aggressively
+B) Using lightweight checkpoint/restore or pre-warmed pools*
+C) Disabling kernel security modules
+D) Replacing TCP with UDP for all serverless function calls
+
+5. What is a "unikernel-style" approach for serverless execution?
+A) Running multiple full Linux instances per function
+B) Using a minimal kernel compiled together with the application*
+C) Deploying serverless functions on bare-metal without any OS
+D) Using Docker containers with Ubuntu as the base image
+
+6. What trade-off is analyzed between snapshotting and fresh start in FaaS platforms?
+A) Cost vs. carbon footprint
+B) Security vs. startup latency and container reuse*
+C) Memory bandwidth vs. disk throughput
+D) IPv4 vs. IPv6 addressing
+
+7. Which FaaS framework is mentioned for use with a custom runtime?
+A) Google Kubernetes Engine
+B) Amazon ECS
+C) OpenFaaS*
+D) VMware Tanzu
+
+8. What workload type is suggested for benchmarking serverless OS optimizations?
+A) Batch data warehouse queries
+B) HTTP-triggered functions*
+C) Long-running simulation workloads
+D) Machine learning model training jobs
+
+9. What does the project suggest measuring to evaluate serverless scalability?
+A) Number of deployed container images
+B) Cold start latency, memory footprint, and scalability*
+C) BIOS boot time and UEFI initialization speed
+D) GPU utilization during inference
+
+10. Which serverless computing attribute makes OS and systems research in this domain highly relevant to industry?
+A) High memory usage and slow startup
+B) Dependency on proprietary hardware accelerators
+C) Reducing latency and cost in a dominant cloud paradigm*
+D) Requirement for dedicated bare-metal servers

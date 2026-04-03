@@ -1,0 +1,59 @@
+1. What does KASLR stand for in Linux kernel hardening?
+A) Kernel Address Space Layout Randomization*
+B) Kernel Access Security Layer Restriction
+C) Key Allocation and Stack Limit Reset
+D) Kernel Audit System for Linux Runtimes
+
+2. What is the purpose of a "stack canary" in kernel security?
+A) To randomize the kernel's base address at boot time
+B) To detect stack buffer overflow attacks by placing a known value before the return address*
+C) To isolate kernel modules in separate memory regions
+D) To encrypt system call arguments before processing
+
+3. What does CFI stand for in the context of kernel security?
+A) Core File Integrity
+B) Control Flow Integrity*
+C) Cache Flush Instruction
+D) Cryptographic Function Interface
+
+4. Which attack type exploits speculative execution to leak data across privilege boundaries?
+A) Return-Oriented Programming (ROP)
+B) Use-after-free heap corruption
+C) Spectre/Meltdown variants*
+D) Format string injection
+
+5. Which Linux Security Module framework is mentioned in the project?
+A) grsecurity
+B) PaX
+C) SELinux*
+D) TOMOYO
+
+6. What is a "use-after-free" vulnerability?
+A) A bug where freed memory is accessed again, potentially allowing attackers to control execution*
+B) A kernel bug that allows reuse of CPU registers after context switch
+C) A file system error where deleted files are re-linked
+D) A scheduling bug where terminated processes consume CPU time
+
+7. Which Linux kernel memory safety tool (sanitizer) is relevant to the hardening discussion?
+A) Valgrind only (user-space)
+B) AddressSanitizer / KernelAddressSanitizer (KASAN)*
+C) Electric Fence only
+D) Purify only
+
+8. What is "privilege escalation" in the context of kernel attacks?
+A) Increasing CPU priority of a kernel thread
+B) An attack allowing a low-privilege user process to gain root or kernel-level access*
+C) Upgrading the kernel version to a newer release
+D) Granting a process more CPU time via the scheduler
+
+9. Which kernel version range is mentioned for evaluating mitigations?
+A) 3.x or 4.x kernel
+B) 5.x or 6.x kernel*
+C) 2.6.x kernel
+D) 1.x or 2.x kernel
+
+10. What does AppArmor provide as an LSM framework?
+A) Hardware-based memory encryption for kernel data
+B) Mandatory access control through path-based security profiles*
+C) Cryptographic signing of all kernel modules
+D) System call interception using BPF programs only

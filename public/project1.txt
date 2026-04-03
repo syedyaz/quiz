@@ -1,0 +1,59 @@
+1. What does eBPF stand for?
+A) Extended Binary Protocol Filter
+B) Extended Berkeley Packet Filter*
+C) Elastic Bandwidth Processing Framework
+D) Embedded Berkeley Process Framework
+
+2. Which of the following is a primary benefit of eBPF over traditional kernel modules?
+A) It requires more system privileges to run
+B) It can only monitor network traffic
+C) It enables safe, efficient in-kernel programs without kernel module development*
+D) It replaces the Linux kernel entirely
+
+3. Which production system is mentioned as a real-world use case of eBPF for networking and security?
+A) VMware ESXi
+B) Docker Swarm
+C) Cilium*
+D) OpenShift
+
+4. Which Linux scheduler is mentioned as a candidate for eBPF-assisted scheduling hints?
+A) MLFQ
+B) CFS (Completely Fair Scheduler)*
+C) Stride Scheduler
+D) Round-Robin Scheduler
+
+5. What type of metrics can an eBPF-based framework collect on a per-process basis?
+A) CPU clock speed and BIOS settings
+B) Cache behavior and I/O patterns*
+C) GPU temperatures and fan speeds
+D) BIOS interrupt frequencies
+
+6. Which of the following tools is associated with eBPF-powered observability in production?
+A) Ansible
+B) Terraform
+C) Falco*
+D) Jenkins
+
+7. What is a key advantage eBPF has over userspace monitoring agents?
+A) It runs completely outside the kernel
+B) It requires no compilation
+C) It provides lightweight, low-overhead in-kernel instrumentation*
+D) It eliminates the need for system calls
+
+8. Which of the following best describes an eBPF LSM hook?
+A) A hardware interrupt handler for disk I/O
+B) A network packet router for HTTP traffic
+C) A security policy enforcement point within the kernel using eBPF*
+D) A user-space firewall rule engine
+
+9. What is the primary evaluation concern when comparing eBPF to traditional kernel modules?
+A) Programming language compatibility
+B) Overhead, safety, and maintainability*
+C) GUI rendering performance
+D) File system inode counts
+
+10. Which benchmarking dimension is specifically mentioned for evaluating eBPF programs?
+A) Screen resolution and refresh rate
+B) Disk sector size and RPM
+C) Latency, throughput, and CPU overhead*
+D) RAM voltage and bus frequency

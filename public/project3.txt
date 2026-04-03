@@ -1,0 +1,59 @@
+1. Which ML technique is specifically mentioned for job scheduling in data centers?
+A) Supervised classification trees
+B) Deep reinforcement learning*
+C) K-means clustering
+D) Linear regression
+
+2. What OS subsystem does memory prefetching relate to in ML-based resource management?
+A) Process scheduling
+B) Network I/O
+C) Memory management*
+D) File system journaling
+
+3. Which simulator is suggested for ML-based scheduling experiments?
+A) ns-3
+B) GEM5
+C) SimGrid*
+D) CloudSim
+
+4. What metric is NOT listed as a key performance indicator for the ML-based scheduler?
+A) Throughput
+B) Latency
+C) Power consumption
+D) Cache coherency latency*
+
+5. What is the primary challenge of deploying ML models inside real operating system kernels?
+A) Lack of training data
+B) Slow network input to the ML model
+C) Overhead of inference and the need for kernel ML frameworks*
+D) Inability to process binary data
+
+6. Which baseline scheduling policy is mentioned for comparison with ML approaches?
+A) Shortest Job First (SJF)
+B) Lottery Scheduling
+C) FIFO (First In, First Out)*
+D) Gang Scheduling
+
+7. What type of study is recommended to understand the contribution of individual model components?
+A) Cross-validation study
+B) Ablation study*
+C) Sensitivity analysis
+D) Bayesian optimization study
+
+8. Which concrete problem is suggested as a focus area for the ML-based scheduler design?
+A) Optimizing web browser rendering engines
+B) Batch job scheduling or container placement*
+C) Improving DNS resolution speed
+D) Reducing video codec latency
+
+9. For which computing domain is ML-based OS scheduling research considered most publishable and relevant?
+A) Desktop gaming and consumer electronics
+B) Cloud and HPC (High Performance Computing)*
+C) Mobile payment processing
+D) Embedded automotive systems
+
+10. What type of ML pipeline component must be designed alongside the ML model itself?
+A) User authentication module
+B) Training pipeline*
+C) Browser rendering engine
+D) Packet inspection framework
