@@ -58,7 +58,7 @@ function App() {
     // Get the test name from the URL parameter, default to 'questions'
     const searchParams = new URLSearchParams(window.location.search);
     const testName = searchParams.get('test') || 'questions';
-    const testFileName = `/${testName}.txt`;
+    const testFileName = `${import.meta.env.BASE_URL}${testName}.txt`;
 
     fetch(testFileName)
       .then(res => {
