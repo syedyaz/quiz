@@ -1,0 +1,59 @@
+1. What OS mechanism allows the CPU to transition to lower-power states during idle periods?
+A) Kernel panic handler
+B) CPU idle states (C-states)*
+C) Memory-mapped I/O remapping
+D) Virtual address space compaction
+
+2. What does RAPL stand for in the context of energy measurement on x86 systems?
+A) Rapid Application Power Layer
+B) Runtime Average Power Limit*
+C) Real-time Active Power Logger
+D) Register-Activated Power Loop
+
+3. Which heterogeneous CPU architecture concept involves mixing performance and efficiency cores?
+A) NUMA (Non-Uniform Memory Access)
+B) Symmetric Multiprocessing (SMP)
+C) big.LITTLE*
+D) Hyper-Threading
+
+4. What is the "energy-delay product" used as?
+A) A measure of file system write amplification
+B) A combined metric balancing energy consumption and task completion time*
+C) A scheduling priority score for real-time tasks
+D) A thermal dissipation coefficient for CPU packaging
+
+5. Which tool is mentioned for measuring energy at the OS or process level?
+A) strace
+B) valgrind
+C) perf*
+D) gdb
+
+6. What power management mechanism does the OS use to control CPU frequency?
+A) Virtual memory paging governor
+B) CPU governor (frequency scaling)*
+C) IRQ affinity masking
+D) Swap space allocation policy
+
+7. What is the goal of "batch consolidation" as an energy-saving strategy?
+A) Increasing CPU frequency to process batches faster
+B) Spreading tasks evenly across all CPU cores
+C) Grouping tasks to allow CPUs to enter deeper sleep states*
+D) Using GPU compute for general-purpose batch jobs
+
+8. What hardware platform is explicitly mentioned for conducting real energy experiments?
+A) NVIDIA Jetson Nano with CUDA profiling
+B) ARM or x86 hardware with RAPL support*
+C) FPGA boards with custom power sensors
+D) Raspberry Pi with external USB power meters only
+
+9. Which domain beyond data centers makes green OS research broadly applicable?
+A) Consumer gaming peripherals
+B) Video streaming platforms
+C) Embedded systems and edge devices*
+D) Blockchain mining rigs
+
+10. What type of policy is suggested for placement optimization in energy-aware computing?
+A) Random task assignment to available cores
+B) Placing tasks on efficiency vs. performance cores based on energy goals*
+C) Always using the highest-frequency CPU cores for all tasks
+D) Migrating all tasks to a remote cloud data center

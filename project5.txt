@@ -1,0 +1,59 @@
+1. What does PMEM stand for in the context of operating systems research?
+A) Programmable Memory Extension Module
+B) Persistent Memory*
+C) Parallel Memory Execution Model
+D) Protected Memory Enclave Manager
+
+2. Which hardware product is cited as an example of persistent memory?
+A) Samsung NVMe SSD
+B) Western Digital Blue HDD
+C) Intel Optane*
+D) Seagate Barracuda
+
+3. What key distinction makes persistent memory unique compared to traditional DRAM?
+A) It operates at lower voltage than standard RAM
+B) It blurs the line between memory and storage by retaining data across power cycles*
+C) It requires a dedicated PCIe slot for installation
+D) It does not support virtual memory addressing
+
+4. What does DAX stand for in the context of PMEM programming?
+A) Disk Access Extended
+B) Direct Access*
+C) Data Archive Exchange
+D) Dynamic Allocation Extension
+
+5. Which file system is mentioned as supporting PMEM with DAX access?
+A) ZFS
+B) Btrfs
+C) NOVA*
+D) FAT32
+
+6. What is "crash safety" in the context of PMEM file systems?
+A) Prevention of physical disk head crashes
+B) Ensuring that data remains consistent and uncorrupted after unexpected power failure*
+C) Monitoring kernel panics and rebooting the system
+D) Encrypting data before writing to persistent memory
+
+7. Which OS memory subsystem area is directly impacted by PMEM adoption, as mentioned in the project?
+A) Kernel module loader
+B) Virtual memory and page cache*
+C) Process scheduling table
+D) Interrupt descriptor table
+
+8. What experimental approach is suggested for testing PMEM without dedicated hardware?
+A) Using AWS cloud instances with NVMe storage
+B) Emulating PMEM using QEMU*
+C) Simulating PMEM with a Python model
+D) Replacing RAM sticks with SSDs
+
+9. Which emerging memory interconnect technology is mentioned alongside PMEM as changing memory hierarchies?
+A) PCIe 5.0
+B) Thunderbolt 4
+C) CXL (Compute Express Link)*
+D) USB4
+
+10. What type of failure scenario must a PMEM prototype be evaluated against?
+A) Memory overclocking instability
+B) Network packet loss under load
+C) Failure scenarios testing performance and correctness*
+D) CPU branch misprediction rates
