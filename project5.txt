@@ -1,59 +1,59 @@
-1. What does PMEM stand for in the context of operating systems research?
-A) Programmable Memory Extension Module
-B) Persistent Memory*
-C) Parallel Memory Execution Model
-D) Protected Memory Enclave Manager
+1. What is the primary characteristic of Persistent Memory (PMEM) used in Project 5?
+A) Faster than SRAM
+B) Blurs the line between memory and storage*
+C) Volatile storage for temporary files
+D) Network-attached storage for backups
 
-2. Which hardware product is cited as an example of persistent memory?
-A) Samsung NVMe SSD
-B) Western Digital Blue HDD
-C) Intel Optane*
-D) Seagate Barracuda
+2. Which Intel technology is mentioned as an example of PMEM?
+A) Optane*
+B) Core i9
+C) Xeon Platinum
+D) Ethernet Controller
 
-3. What key distinction makes persistent memory unique compared to traditional DRAM?
-A) It operates at lower voltage than standard RAM
-B) It blurs the line between memory and storage by retaining data across power cycles*
-C) It requires a dedicated PCIe slot for installation
-D) It does not support virtual memory addressing
+3. What does "DAX" stand for in the context of PMEM file systems?
+A) Direct Access*
+B) Distributed Algorithm eXchange
+C) Dynamic Allocation eXtraction
+D) Data Archive Xpress
 
-4. What does DAX stand for in the context of PMEM programming?
-A) Disk Access Extended
-B) Direct Access*
-C) Data Archive Exchange
-D) Dynamic Allocation Extension
+4. Which file system is cited as having PMEM-aware (DAX) support?
+A) FAT32
+B) ext4-DAX and XFS-DAX*
+C) NTFS
+D) exFAT
 
-5. Which file system is mentioned as supporting PMEM with DAX access?
-A) ZFS
-B) Btrfs
-C) NOVA*
-D) FAT32
+5. What is a key challenge in managing PMEM according to the research objectives?
+A) Disk sectors are too large
+B) Consistency and crash-safety challenges*
+C) Browser tab management
+D) GUI rendering performance
 
-6. What is "crash safety" in the context of PMEM file systems?
-A) Prevention of physical disk head crashes
-B) Ensuring that data remains consistent and uncorrupted after unexpected power failure*
-C) Monitoring kernel panics and rebooting the system
-D) Encrypting data before writing to persistent memory
+6. Which PMEM programming model library is explicitly mentioned?
+A) libpmem*
+B) libC
+C) libSDL
+D) libGLFW
 
-7. Which OS memory subsystem area is directly impacted by PMEM adoption, as mentioned in the project?
-A) Kernel module loader
-B) Virtual memory and page cache*
-C) Process scheduling table
-D) Interrupt descriptor table
+7. What is the benefit of a PMEM-aware file system over a traditional one?
+A) It eliminates the need for RAM
+B) It allows direct application access to persistent storage without copying to page cache*
+C) It speeds up internet access
+D) It provides built-in anti-virus
 
-8. What experimental approach is suggested for testing PMEM without dedicated hardware?
-A) Using AWS cloud instances with NVMe storage
-B) Emulating PMEM using QEMU*
-C) Simulating PMEM with a Python model
-D) Replacing RAM sticks with SSDs
+8. What is the goal of a PMEM allocator prototyped in Project 5?
+A) Memory allocation that is persistent across reboots*
+B) Virtual RAM for browsers
+C) Swap space on SSDs
+D) Cloud storage allocation
 
-9. Which emerging memory interconnect technology is mentioned alongside PMEM as changing memory hierarchies?
-A) PCIe 5.0
-B) Thunderbolt 4
-C) CXL (Compute Express Link)*
-D) USB4
+9. Which emulator can be used for simulating PMEM in the methodology?
+A) QEMU*
+B) VirtualBox
+C) VMware
+D) Hyper-V
 
-10. What type of failure scenario must a PMEM prototype be evaluated against?
-A) Memory overclocking instability
-B) Network packet loss under load
-C) Failure scenarios testing performance and correctness*
-D) CPU branch misprediction rates
+10. Why is research on OS support for PMEM considered relevant to large-scale systems?
+A) It helps in designing better smartphone cases
+B) It is directly applicable to databases, HPC, and storage systems*
+C) It improves the design of computer mice
+D) It simplifies the installation of drivers

@@ -1,59 +1,59 @@
-1. What does FaaS stand for?
-A) Fiber as a Service
-B) Function as a Service*
-C) Firmware as a Service
-D) Failover as a Service
+1. What is the primary requirement for serverless (FaaS) platforms according to Project 6?
+A) Static IP addresses
+B) Cold start latency and isolation*
+C) Audio driver compatibility
+D) Keyboard layout support
 
-2. What is "cold start latency" in the context of serverless platforms?
-A) The time for a server to shut down cleanly
-B) The delay incurred when starting a new function instance from scratch*
-C) The network latency introduced by geographic distance
-D) The time taken to compile and link a serverless function's code
+2. Which major serverless platform is mentioned in the research objectives?
+A) AWS Lambda*
+B) Azure SQL
+C) GitHub Pages
+D) Heroku
 
-3. Which major serverless platform is mentioned in the project description?
-A) Azure Functions only
-B) Google Cloud Run only
-C) AWS Lambda*
-D) IBM Cloud Functions only
+3. What does "snapshotted state" refer to in the context of serverless execution?
+A) Taking a screenshot of the UI
+B) Storing the memory state of a process to enable fast resumes*
+C) Backing up the entire OS disk
+D) Profiling the network usage
 
-4. What OS-level optimization technique is proposed for reducing cold start latency?
-A) Increasing CPU frequency scaling aggressively
-B) Using lightweight checkpoint/restore or pre-warmed pools*
-C) Disabling kernel security modules
-D) Replacing TCP with UDP for all serverless function calls
+4. Which isolation mechanism is compared to containers for FaaS platforms?
+A) VMware ESXi
+B) Firecracker MicroVMs*
+C) Hyper-V
+D) VirtualBox
 
-5. What is a "unikernel-style" approach for serverless execution?
-A) Running multiple full Linux instances per function
-B) Using a minimal kernel compiled together with the application*
-C) Deploying serverless functions on bare-metal without any OS
-D) Using Docker containers with Ubuntu as the base image
+5. What is the goal of an "OS-level optimization" in a serverless environment?
+A) Reducing the time it takes to boot a smartphone
+B) Reducing cold start latency for HTTP-triggered functions*
+C) Improving the speed of mouse clicks
+D) Enhancing the resolution of video files
 
-6. What trade-off is analyzed between snapshotting and fresh start in FaaS platforms?
-A) Cost vs. carbon footprint
-B) Security vs. startup latency and container reuse*
-C) Memory bandwidth vs. disk throughput
-D) IPv4 vs. IPv6 addressing
+6. Which minimal kernel style is mentioned for serverless execution?
+A) Debian
+B) Unikernel*
+C) Windows IoT
+D) Android
 
-7. Which FaaS framework is mentioned for use with a custom runtime?
-A) Google Kubernetes Engine
-B) Amazon ECS
-C) OpenFaaS*
-D) VMware Tanzu
+7. What metric is specifically mentioned for measuring serverless scalability?
+A) Cold start latency and memory footprint*
+B) Disk sector size and RPM
+C) RAM voltage and frequency
+D) Screen brightness and contrast
 
-8. What workload type is suggested for benchmarking serverless OS optimizations?
-A) Batch data warehouse queries
-B) HTTP-triggered functions*
-C) Long-running simulation workloads
-D) Machine learning model training jobs
+8. Which FaaS framework is suggested for experimentation in the methodology?
+A) OpenFaaS*
+B) Ansible
+C) Terraform
+D) Jenkins
 
-9. What does the project suggest measuring to evaluate serverless scalability?
-A) Number of deployed container images
-B) Cold start latency, memory footprint, and scalability*
-C) BIOS boot time and UEFI initialization speed
-D) GPU utilization during inference
+9. Why is serverless research highly relevant to industry today?
+A) It reduces the cost of electricity in data centers
+B) It is a dominant cloud paradigm for high scalability and cost efficiency*
+C) It helps in designing better PC cases
+D) It simplifies the installation of Windows
 
-10. Which serverless computing attribute makes OS and systems research in this domain highly relevant to industry?
-A) High memory usage and slow startup
-B) Dependency on proprietary hardware accelerators
-C) Reducing latency and cost in a dominant cloud paradigm*
-D) Requirement for dedicated bare-metal servers
+10. What is a key trade-off mentioned when choosing between snapshotting and a fresh start?
+A) Security vs. startup speed*
+B) Disk size vs. screen resolution
+C) Memory speed vs. CPU clock speed
+D) Audio quality vs. video quality

@@ -1,59 +1,59 @@
-1. What does TEE stand for in the context of confidential computing?
-A) Trusted Execution Environment*
-B) Terminal Emulation Engine
-C) Transparent Encryption Extension
-D) Tiered Execution Engine
+1. Which technology is a hardware-assisted Trusted Execution Environment (TEE) mentioned in Project 4?
+A) Microsoft Defender
+B) Intel SGX and ARM TrustZone*
+C) NVIDIA CUDA cores
+D) Realtek Audio drivers
 
-2. Which hardware TEE is developed by Intel?
-A) ARM TrustZone
-B) AMD SEV-SNP
-C) Intel SGX*
-D) RISC-V Keystone
+2. What is the primary purpose of TEE architectures in Confidential Computing?
+A) Speeding up disk reads
+B) Providing hardware-assisted confidentiality and integrity for sensitive workloads*
+C) Managing network bandwidth
+D) Compiling kernel modules faster
 
-3. What is "attestation" in the context of TEEs?
-A) A process to increase TEE memory limits
-B) A mechanism to verify the authenticity and integrity of an enclave*
-C) A method to bypass kernel security checks
-D) A technique to speed up I/O within secure enclaves
+3. What is a common limitation of TEEs mentioned in the research objectives?
+A) High memory limits
+B) Memory limits, side channels, and performance overhead*
+C) No support for VMs
+D) Lack of encryption
 
-4. Which LibOS approach is mentioned for managing OS services inside TEEs?
-A) Docker shim
-B) WASM runtime
-C) Gramine*
-D) KVM hypervisor
+4. Which approach is cited for OS support of TEEs (often involving LibOS)?
+A) Gramine or Occlum*
+B) Ansible or Terraform
+C) Docker Swarm
+D) Apache Spark
 
-5. What is a known limitation of TEEs such as Intel SGX?
-A) Incompatibility with x86 architecture
-B) Inability to run user-space programs
-C) Memory limits and susceptibility to side channels*
-D) Lack of support for cryptographic operations
+5. What does the enclave lifecycle manage in a TEE?
+A) Browser history
+B) The generation, attestation, and secure execution of sensitive code*
+C) Network packet routing
+D) System clock synchronization
 
-6. Which use case for TEEs is explicitly mentioned as a design or evaluation target?
-A) Video streaming acceleration
-B) Confidential containers or secure key management*
-C) Real-time operating system scheduling
-D) Distributed database replication
+6. Which cloud scenario is explicitly mentioned as a use case for TEEs?
+A) High-definition video streaming
+B) Cloud tenant isolation and confidential containers*
+C) Open-source font hosting
+D) Public data mining
 
-7. In which cloud scenario are TEEs most critically needed?
-A) Single-tenant cloud environments with dedicated hardware
-B) Multi-tenant cloud environments requiring tenant isolation*
-C) Edge gaming deployments requiring GPU passthrough
-D) On-premise bare metal servers with physical access controls
+7. What is "attestation" in the context of TEEs?
+A) Verifying the integrity and authenticity of the enclave's state*
+B) Testing CPU fan speed
+C) Measuring disk latency
+D) Checking the version of the Linux kernel
 
-8. What does the OS need to manage for enclave lifecycle in TEE support?
-A) BIOS firmware updates
-B) GPU shader compilation
-C) Enclave memory management, I/O, and syscall handling*
-D) Network packet routing tables
+8. Which threat model is relevant to Confidential Computing?
+A) Identifying physical damage to the motherboard
+B) Compromised hypervisors or malicious cloud administrators*
+C) Phishing emails to users
+D) Internet connection loss
 
-9. Which AMD TEE technology is mentioned in the project description?
-A) AMD SVM
-B) AMD SEV-SNP*
-C) AMD TrustZone
-D) AMD HSA
+9. What technology is cited as a middleware or LibOS for secure workloads?
+A) QEMU
+B) Occlum*
+C) Vim
+D) Git
 
-10. What threat does the term "side channel" refer to in the context of TEE security?
-A) Unauthorized access through misconfigured firewalls
-B) An attack exploiting information leaked through indirect system behavior such as timing or power usage*
-C) A man-in-the-middle attack on encrypted network traffic
-D) An SQL injection attack on the kernel's process table
+10. Why is research on TEE integration into OS-level kernels considered timely?
+A) Because it reduces electricity consumption
+B) Because Confidential Computing is critical for multi-tenant clouds and regulated workloads*
+C) Because it enables faster graphics rendering
+D) Because it simplifies the installation of Windows
