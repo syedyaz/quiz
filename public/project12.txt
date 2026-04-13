@@ -1,0 +1,59 @@
+1. What is the focus of Project 12 in the context of edge-fog-cloud hierarchies?
+A) Graphics rendering on local devices
+B) Predictive workload offloading and placement mechanisms*
+C) Keyboard driver optimization
+D) Social media content moderation
+
+2. Why do static or reactive placement strategies often fail in multi-tier systems?
+A) Because the hardware is too heavy
+B) Because of variable load and node mobility*
+C) Because the screen resolution is too high
+D) Because of slow internet in the cloud only
+
+3. Which strategy is mentioned for deciding where to run a workload in a multi-tier system?
+A) Model-based (MDP or game-theoretic) and learning-based*
+B) Random file deletion
+C) Constant polling of user mouse movements
+D) Manual placement by data center staff
+
+4. What characterizes the "edge" tier in terms of performance and capacity?
+A) High latency, high CPU capacity
+B) Low latency, limited CPU capacity*
+C) No CPU capacity
+D) Highest bandwidth costs
+
+5. Which simulator is explicitly mentioned for implementing offloading policies?
+A) iFogSim or EdgeCloudSim*
+B) NS-3
+C) GNS3
+D) Packet Tracer
+
+6. What type of policy is suggested as a baseline for comparison in the research?
+A) Nearest-node or cloud-only*
+B) Maximum-power-usage policy
+C) Random-reboot policy
+D) Slowest-path policy
+
+7. Which metric is listed for evaluating the efficiency of workload placement?
+A) End-to-end latency, deadline miss rate, and bandwidth usage*
+B) Screen refresh rate and color depth
+C) Disk sector size and RPM
+D) RAM brand and price
+
+8. What is a key limitation discussed regarding predictive placement in real edge platforms?
+A) Too many tiers in the cloud
+B) Accuracy of predictions and communication overhead for state*
+C) High battery life of edge nodes
+D) Excessively low latency
+
+9. Which real-world orchestration platform is cited for potential deployment?
+A) Kubernetes Edge or K3s*
+B) Windows 11 Enterprise
+C) macOS Server
+D) Android Oreo
+
+10. What is the "Emerging Relevance" of multi-tier edge-fog-cloud systems?
+A) They increase the weight of IoT devices
+B) They are central to 5G, Smart Cities, and Industry 4.0*
+C) They simplify the installation of printer drivers
+D) They reduce the count of files on the desktop

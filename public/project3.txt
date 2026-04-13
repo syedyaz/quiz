@@ -1,59 +1,59 @@
-1. Which ML technique is specifically mentioned for job scheduling in data centers?
-A) Supervised classification trees
-B) Deep reinforcement learning*
-C) K-means clustering
-D) Linear regression
+1. Which area of resource management is mentioned as a focus for ML-based approaches in Project 3?
+A) Graphics rendering and UI design
+B) CPU scheduling, memory management, and power management*
+C) Audio driver optimization
+D) Browser history management
 
-2. What OS subsystem does memory prefetching relate to in ML-based resource management?
-A) Process scheduling
-B) Network I/O
-C) Memory management*
-D) File system journaling
+2. What is an example of an ML technique cited for job scheduling in data centers?
+A) Support Vector Machines
+B) Deep Reinforcement Learning*
+C) K-Nearest Neighbors
+D) Principal Component Analysis
 
-3. Which simulator is suggested for ML-based scheduling experiments?
-A) ns-3
-B) GEM5
-C) SimGrid*
-D) CloudSim
+3. For which OS subsystem can ML be used to manage prefetching and partitioning?
+A) Audio output
+B) Memory subsystem (cache partitioning)*
+C) Input devices
+D) Network stack (TCP/IP)
 
-4. What metric is NOT listed as a key performance indicator for the ML-based scheduler?
-A) Throughput
-B) Latency
-C) Power consumption
-D) Cache coherency latency*
+4. Which discrete-event simulator is explicitly mentioned for testing ML-based schedulers?
+A) NS-3
+B) SimGrid*
+C) GNS3
+D) Packet Tracer
 
-5. What is the primary challenge of deploying ML models inside real operating system kernels?
-A) Lack of training data
-B) Slow network input to the ML model
-C) Overhead of inference and the need for kernel ML frameworks*
-D) Inability to process binary data
+5. What is a key feasibility consideration before deploying ML in a real kernel?
+A) The number of layers in the model
+B) The overhead of inference and need for kernel ML frameworks*
+C) The size of the dataset stored in userspace
+D) The color scheme of the OS interface
 
-6. Which baseline scheduling policy is mentioned for comparison with ML approaches?
-A) Shortest Job First (SJF)
-B) Lottery Scheduling
-C) FIFO (First In, First Out)*
-D) Gang Scheduling
+6. Which scheduling policy is mentioned as a baseline for comparison in the research?
+A) Round-Robin
+B) FIFO and fair-share*
+C) Stride Scheduling
+D) MLFQ
 
-7. What type of study is recommended to understand the contribution of individual model components?
-A) Cross-validation study
-B) Ablation study*
-C) Sensitivity analysis
-D) Bayesian optimization study
-
-8. Which concrete problem is suggested as a focus area for the ML-based scheduler design?
-A) Optimizing web browser rendering engines
+7. What type of job is specifically mentioned as a target for reinforcement learning in data centers?
+A) Browser tab switching
 B) Batch job scheduling or container placement*
-C) Improving DNS resolution speed
-D) Reducing video codec latency
+C) Mouse movement smoothing
+D) Video file compression
 
-9. For which computing domain is ML-based OS scheduling research considered most publishable and relevant?
-A) Desktop gaming and consumer electronics
-B) Cloud and HPC (High Performance Computing)*
-C) Mobile payment processing
-D) Embedded automotive systems
+8. Which metric is suggested for evaluating an ML-based resource management solution?
+A) Throughput, latency, and power*
+B) Disk RPM and sector size
+C) RAM voltage and frequency
+D) Screen brightness and contrast
 
-10. What type of ML pipeline component must be designed alongside the ML model itself?
-A) User authentication module
-B) Training pipeline*
-C) Browser rendering engine
-D) Packet inspection framework
+9. What is a primary trend that makes ML for systems a major research area?
+A) The decline of cloud computing
+B) AI/ML for systems is bridging the gap between classical OS and modern workloads*
+C) The simplification of OS kernels
+D) The removal of scheduling from modern kernels
+
+10. What type of study is recommended in the methodology for understanding model impact?
+A) Ablation studies*
+B) A/B testing on live users
+C) Manual code review of the kernel
+D) Power-off tests

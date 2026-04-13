@@ -6,7 +6,7 @@ D) It deletes training data immediately after each round
 
 2. Which aggregation algorithm is explicitly mentioned for combining model updates in a Federated Learning pipeline?
 A) Gradient Boosting
-B) FedAvg*
+B) FedAvg or FedProx*
 C) Backpropagation
 D) Expectation-Maximization
 
@@ -19,7 +19,7 @@ D) Data stored in a non-relational database format
 4. Which dataset is suggested for network intrusion-based anomaly detection experiments?
 A) MNIST
 B) ImageNet
-C) UNSW-NB15*
+C) UNSW-NB15 or CICIDS*
 D) CIFAR-10
 
 5. Which Python framework is mentioned for implementing a Federated Learning simulation?
@@ -31,7 +31,7 @@ D) Keras Tuner
 6. What type of neural network model is suggested for anomaly detection in the federated setting?
 A) Convolutional Neural Network (CNN)
 B) Generative Adversarial Network (GAN)
-C) Long Short-Term Memory (LSTM)*
+C) LSTM, Autoencoder, or Random Forest*
 D) Transformer with self-attention heads
 
 7. What is "differential privacy" as mentioned in the project's optional enhancement?
@@ -40,9 +40,9 @@ B) A cryptographic protocol for secure key exchange between nodes
 C) A mechanism that adds controlled noise to model updates to protect individual data privacy*
 D) A method of splitting a neural network across multiple edge nodes
 
-8. Which metric is listed for evaluating the efficiency of communication in the federated system?
+8. Which metric is listed for evaluating detection performance in the federated system?
 A) CPU clock cycles per training epoch
-B) Communication overhead*
+B) Detection accuracy, false positive rate, and communication overhead*
 C) GPU memory utilization per node
 D) Number of layers in the neural network
 
@@ -55,5 +55,5 @@ D) It distributes labeled training datasets to each edge node before training be
 10. Which real-world application domain is explicitly cited as a target for federated anomaly detection in edge environments?
 A) High-frequency stock trading platforms
 B) Augmented reality gaming systems
-C) Smart cities and industrial IoT*
+C) Smart cities, industrial IoT, and cybersecurity*
 D) Desktop productivity software suites

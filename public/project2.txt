@@ -1,59 +1,59 @@
-1. Which of the following is an example of a lightweight virtual machine (MicroVM) technology?
-A) Docker
-B) Podman
-C) Firecracker*
-D) containerd
+1. Which of the following is an example of a lightweight virtual machine mentioned in the project?
+A) VirtualBox
+B) Firecracker*
+C) VMware Fusion
+D) Hyper-V
 
-2. What is the primary motivation for using lightweight virtualization in Edge and IoT deployments?
-A) High memory usage and complex management
-B) Low-footprint, secure isolation*
-C) Increased boot time for better stability
-D) Support for heavy machine learning workloads
+2. In terms of resource usage, how do containers typically compare to MicroVMs?
+A) Containers have a higher memory footprint
+B) Containers generally have a lower footprint and faster startup*
+C) MicroVMs have no kernel overhead
+D) Containers provide stronger hardware-level isolation
 
-3. Which container runtime is explicitly mentioned in the project description?
-A) rkt
-B) LXC
-C) containerd*
-D) cri-o
+3. Which benchmarked metric is specifically mentioned for comparing containers and MicroVMs?
+A) Screen refresh rate
+B) GPU floating point operations
+C) Startup time, memory footprint, and I/O performance*
+D) Battery life on mobile devices
 
-4. Which dimension is NOT listed as a key comparison criterion between containers and MicroVMs?
-A) Startup time
-B) Memory footprint
-C) I/O performance
-D) Programming language support*
+4. What is a key security boundary difference between containers and MicroVMs?
+A) Containers share the host kernel, while MicroVMs have their own*
+B) MicroVMs share the host kernel for all system calls
+C) Containers use hardware-assisted virtualization for every process
+D) MicroVMs are only used for non-secure workloads
 
-5. What does the term "kernel attack surface" refer to in the context of security analysis?
-A) The total size of the OS source code
-B) The number of user accounts on a system
-C) The exposed interfaces and vulnerabilities in the kernel that attackers can exploit*
-D) The amount of RAM allocated to the kernel
+5. Which technology is cited as an example of a container runtime?
+A) Firecracker
+B) containerd*
+C) QEMU
+D) KVM
 
-6. Which type of benchmark workload is suggested for the experimental comparison?
-A) Video rendering and 3D animation pipelines
-B) Database replication across multiple continents
-C) Redis, Nginx, and serverless-style workloads*
-D) Batch data archival and tape backup
+6. What type of deployment scenario is the primary focus of Project 2?
+A) Desktop gaming
+B) Edge and IoT deployments*
+C) High-frequency trading
+D) Offline data backup
 
-7. What concept involves selecting isolation technology based on workload characteristics?
-A) Resource pooling
-B) Live migration
-C) Decision framework for isolation technology*
-D) Kernel bypass networking
+7. Which of the following is a representative container workload mentioned for experimentation?
+A) Adobe Premiere
+B) Redis or Nginx*
+C) Microsoft Excel
+D) AutoCAD
 
-8. Which statistical analysis requirement is emphasized for reproducibility?
-A) Using proprietary benchmarking software
-B) Running tests only on cloud infrastructure
-C) Standardized benchmarks with reproducible setup*
-D) Comparing at least ten different hypervisors
+8. What is the goal of the "decision framework" mentioned in the research objectives?
+A) To choose between different programming languages
+B) To select the appropriate isolation technology (container vs. MicroVM) based on constraints*
+C) To determine the best ISP for edge nodes
+D) To automate the process of buying hardware
 
-9. Which edge computing use case drives the need for fast, inexpensive isolation?
-A) Long-running batch jobs in data centers
-B) Serverless functions at the edge*
-C) High-performance computing clusters
-D) Legacy enterprise application hosting
+9. Which hardware platform is suggested for the experimental study in Project 2?
+A) Specialized mainframe
+B) Single board (e.g., Raspberry Pi) or x86 platform*
+C) Gaming console
+D) Smartwatch
 
-10. What is a distinguishing security characteristic analyzed for containers vs. MicroVMs?
-A) Support for IPv6 routing protocols
-B) Isolation guarantees and kernel attack surface*
-C) Support for GPU passthrough
-D) Compatibility with Windows drivers
+10. What does the project suggest regarding the kernel attack surface?
+A) Containers have a smaller attack surface than MicroVMs
+B) MicroVMs generally have a more restricted attack surface due to isolation*
+C) Neither technology uses the Linux kernel
+D) Both technologies provide identical security boundaries

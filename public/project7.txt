@@ -1,59 +1,59 @@
-1. Which distributed consensus algorithm is most commonly used by Kubernetes' control plane via etcd?
-A) Paxos
-B) Viewstamped Replication
-C) Raft*
-D) Two-Phase Commit
+1. Which distributed consensus algorithm is mentioned in Project 7?
+A) Raft*
+B) Diffie-Hellman
+C) RSA
+D) AES
 
-2. What is the primary role of etcd in a Kubernetes cluster?
-A) Container image registry
-B) Distributed key-value store for cluster state and configuration*
-C) Container runtime interface
-D) Node hardware monitoring agent
+2. What is the primary role of etcd in a modern cluster operating system like Kubernetes?
+A) Packet filtering
+B) Distributed consensus and configuration management*
+C) Audio driver management
+D) Web browser rendering
 
-3. Which open-source coordination service is listed alongside etcd and Consul?
-A) Cassandra
-B) Redis
-C) ZooKeeper*
-D) MongoDB
+3. What does "CAP" stand for in the context of distributed systems?
+A) Consistency, Availability, Partition tolerance*
+B) Centralized Application Processing
+C) Cloud Access Protocol
+D) Computer-Aided Programming
 
-4. What does the CAP theorem state in the context of distributed systems?
-A) A system can have Consistency, Availability, and Partition tolerance simultaneously
-B) A distributed system can guarantee at most two of Consistency, Availability, and Partition tolerance*
-C) A cluster must choose between CPU, Availability, and Performance
-D) A network can be either fast, reliable, or scalable but not all three
+4. Which of the following is an example of a coordinated service mentioned for cluster management?
+A) Redis
+B) etcd or Consul*
+C) Apache Spark
+D) Docker Swarm
 
-5. What scenario is suggested for design or simulation in this project?
-A) A standalone desktop application with local file storage
-B) A distributed lock service or cluster-wide configuration store under faults*
-C) A single-node in-memory database with ACID properties
-D) A batch processing pipeline using Hadoop MapReduce
+5. What is the goal of "distributed consensus" in OS-level resource management?
+A) Reaching agreement among nodes on the state of the cluster*
+B) Distributing electricity to nodes
+C) Managing local file systems
+D) Optimizing keyboard input
 
-6. What type of failure condition must the distributed system be evaluated under?
-A) RAM overheating and CPU throttling
-B) Node failure and network partition*
-C) Disk defragmentation and page file growth
-D) NIC driver crashes and USB disconnections
+6. Which orchestration system is explicitly mentioned for its reliance on consensus?
+B) Kubernetes*
+C) VMware ESXi
+D) Oracle Database
+D) Jenkins
 
-7. What consistency model is analyzed in relation to cluster management trade-offs?
-A) Eventual consistency vs. strong isolation
-B) Strong consistency vs. availability in the CAP context*
-C) Read-your-writes vs. monotonic reads
-D) Linearizability vs. serializability in ACID transactions
+7. What is a key performance metric for distributed consensus algorithms?
+A) Throughput and latency under network partitions*
+B) Disk sector size and RPM
+C) RAM voltage and frequency
+D) Screen brightness and contrast
 
-8. Which consensus property is evaluated in terms of throughput and latency?
-A) Byzantine fault tolerance under adversarial nodes
-B) Failure handling and performance under partitions*
-C) Encryption overhead during leader election
-D) Memory usage during state machine replication
+8. Which scenario is suggested for simulation in Project 7?
+A) Distributed lock service or cluster-wide configuration store*
+B) Gaming with multiple players
+C) Offline video editing
+D) Printing on multiple printers
 
-9. What cluster orchestration platform is mentioned as relying on distributed consensus?
-A) Apache Mesos
-B) Docker Swarm
-C) Kubernetes*
-D) Nomad by HashiCorp
+9. Why is Distributed Systems theory relevant to modern Cluster OS?
+A) It reduces the weight of servers
+B) It connects classical theory to modern cloud infrastructure*
+C) It helps in designing better UI layouts
+D) It simplifies the installation of Windows
 
-10. What is "leader election" in the context of distributed coordination?
-A) A user-voting mechanism for cluster administrators
-B) The process by which distributed nodes agree on a single coordinator or primary node*
-C) A load balancing algorithm for distributing HTTP requests
-D) A scheduling policy for prioritizing jobs in a task queue
+10. What trade-off is often discussed in the context of the CAP theorem?
+A) Consistency vs. Availability*
+B) CPU speed vs. RAM speed
+C) Disk space vs. Screen resolution
+D) Audio quality vs. Video quality

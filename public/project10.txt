@@ -1,59 +1,59 @@
-1. What is a unikernel?
-A) A hypervisor that runs multiple virtual machines simultaneously
-B) A standard Linux distribution stripped down to minimal packages
-C) An application compiled together with a minimal OS layer into a single bootable image*
-D) A container runtime that eliminates the need for a host OS entirely
+1. What is the fundamental design principle of a unikernel?
+A) Running as many applications as possible on a single kernel
+B) Compiling an application with a minimal OS layer into a single image*
+C) Using a monolithic kernel for high compatibility
+D) Virtualizing the entire hardware for each process
 
 2. Which unikernel/library OS project is explicitly mentioned in the project description?
-A) FreeRTOS
-B) Unikraft*
-C) seL4
-D) L4/Fiasco
+A) Unikraft or OSv*
+B) Debian
+C) FreeBSD
+D) macOS
 
-3. What is a key advantage of unikernels over general-purpose OS like Linux?
-A) Broader driver support and hardware compatibility
-B) Reduced footprint and smaller attack surface*
-C) Support for multi-user login environments
-D) Easier debugging with standard Linux tools
+3. What is a primary benefit of using a unikernel according to Project 10?
+A) Support for all possible drivers
+B) Reduced footprint and attack surface*
+C) Faster internet browsing
+D) Built-in graphics acceleration
 
-4. Which application type is suggested as an ideal workload for unikernel benchmarking?
-A) Desktop GUI applications with database backends
-B) Batch scientific computing with MPI parallelism
-C) Key-value store, HTTP server, or packet processing*
-D) Full enterprise Java application servers
+4. How does a unikernel image differ from a traditional OS image?
+A) It includes the entire Linux distribution
+B) It contains only the application and necessary library OS components*
+C) It requires a separate hypervisor to run
+D) It is always larger in size
 
-5. What limitation of unikernels relates to the operating environment they can support?
-A) Inability to run on ARM processors
-B) Limited syscall and driver compatibility reducing portability*
-C) Requirement for a dedicated GPU for operation
-D) Incompatibility with all cloud hypervisors
+5. Which metric is suggested for comparing unikernels with general-purpose OSs like Linux?
+A) Screen refresh rate
+B) Boot time, memory footprint, and throughput*
+C) Keyboard layout variety
+D) Mouse click latency
 
 6. Which target platform supports unikernel deployment, as mentioned in the project?
-A) Physical mobile devices only
-B) Bare metal, VMs, and containers*
-C) Only hardware with UEFI Secure Boot
-D) Only RISC-V based hardware
+A) Bare metal, VM, or container environment*
+B) Only internal hardware
+C) Only within a web browser
+D) Only on smartphones
 
-7. How does unikernel boot time typically compare to a full Linux OS?
-A) Unikernels take significantly longer due to complex initialization
-B) Boot times are identical since both use GRUB
-C) Unikernels boot much faster due to minimal initialization code*
-D) Boot time is irrelevant since unikernels never reboot
+7. What is a key limitation of unikernels discussed in the research?
+A) High memory usage
+B) Compatibility (syscalls, drivers) and ecosystem support*
+C) Too many debugging tools
+D) Excessively fast boot times
 
-8. What is a primary benefit of using unikernels for FaaS (Function-as-a-Service) runtimes?
-A) They support more programming languages than containers
-B) They provide a fast-booting, minimal, and secure execution environment*
-C) They are easier to monitor with standard tools like top and htop
-D) They offer full POSIX compliance with zero performance overhead
+8. Which use case is proposed where unikernels offer clear benefits?
+A) Edge node or FaaS runtime*
+B) Desktop productivity
+C) Offline video editing
+D) Gaming consoles
 
-9. Which aspect of unikernels makes ecosystem support a concern?
-A) Over-reliance on proprietary cloud vendor APIs
-B) Difficulty in porting existing applications due to limited syscall and library support*
-C) High licensing costs compared to open-source Linux distributions
-D) Inability to handle network I/O efficiently
+9. What does the term "Library OS" imply in the context of Project 10?
+A) An OS that consists of modular libraries for building specialized kernels*
+B) A physical library for computer books
+C) A collection of web browser extensions
+D) A tool for managing PDF files
 
-10. What comparison methodology is suggested for evaluating unikernels?
-A) Compare only theoretical specifications from vendor documentation
-B) Deploy one or more unikernels and benchmark against baseline Linux*
-C) Use only cloud-provider managed Kubernetes environments for testing
-D) Evaluate only security properties without performance benchmarking
+10. Why are unikernels considered relevant for performance-critical workloads?
+A) They provide a full GUI for better control
+B) They offer minimal overhead and specialized execution environments*
+C) They are easier to install than Windows
+D) They support more programming languages than Linux

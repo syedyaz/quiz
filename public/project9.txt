@@ -1,59 +1,59 @@
-1. What does KASLR stand for in Linux kernel hardening?
-A) Kernel Address Space Layout Randomization*
-B) Kernel Access Security Layer Restriction
-C) Key Allocation and Stack Limit Reset
-D) Kernel Audit System for Linux Runtimes
+1. What is the primary focus of Project 9?
+A) Graphics rendering and UI design
+B) Security hardening and attack mitigation in the Linux kernel*
+C) Audio driver optimization
+D) Browser history management
 
-2. What is the purpose of a "stack canary" in kernel security?
-A) To randomize the kernel's base address at boot time
-B) To detect stack buffer overflow attacks by placing a known value before the return address*
-C) To isolate kernel modules in separate memory regions
-D) To encrypt system call arguments before processing
+2. Which Linux kernel hardening feature is mentioned in the research?
+A) KASLR (Kernel Address Space Layout Randomization)*
+B) Disk defragmentation
+C) Registry cleaning
+D) Keyboard layout switching
 
-3. What does CFI stand for in the context of kernel security?
-A) Core File Integrity
-B) Control Flow Integrity*
-C) Cache Flush Instruction
-D) Cryptographic Function Interface
+3. What is an example of an attack vector cited in the project description?
+A) Side channels, use-after-free, or privilege escalation*
+B) High memory usage
+C) Slow internet connection
+D) Screen brightness flickering
 
-4. Which attack type exploits speculative execution to leak data across privilege boundaries?
-A) Return-Oriented Programming (ROP)
-B) Use-after-free heap corruption
-C) Spectre/Meltdown variants*
-D) Format string injection
+4. Which Linux Security Module (LSM) framework is explicitly mentioned?
+A) SELinux or AppArmor*
+B) Ansible
+C) Terraform
+D) Jenkins
 
-5. Which Linux Security Module framework is mentioned in the project?
-A) grsecurity
-B) PaX
-C) SELinux*
-D) TOMOYO
+5. What is the goal of "hardening mechanisms" in the Linux kernel?
+A) To make the kernel heavier and more complex
+B) To mitigate vulnerabilities and protect against exploits*
+C) To increase the CPU clock speed
+D) To shorten the mouse click latency
 
-6. What is a "use-after-free" vulnerability?
-A) A bug where freed memory is accessed again, potentially allowing attackers to control execution*
-B) A kernel bug that allows reuse of CPU registers after context switch
-C) A file system error where deleted files are re-linked
-D) A scheduling bug where terminated processes consume CPU time
+6. Which side-channel attack family is mentioned for research?
+A) Spectre or Meltdown*
+B) Phishing
+C) SQL Injection
+D) XSS
 
-7. Which Linux kernel memory safety tool (sanitizer) is relevant to the hardening discussion?
-A) Valgrind only (user-space)
-B) AddressSanitizer / KernelAddressSanitizer (KASAN)*
-C) Electric Fence only
-D) Purify only
+7. What metric is specifically mentioned for evaluating hardening mitigations?
+A) Performance impact and security effectiveness*
+B) Disk sector size and RPM
+C) RAM voltage and frequency
+D) Screen brightness and contrast
 
-8. What is "privilege escalation" in the context of kernel attacks?
-A) Increasing CPU priority of a kernel thread
-B) An attack allowing a low-privilege user process to gain root or kernel-level access*
-C) Upgrading the kernel version to a newer release
-D) Granting a process more CPU time via the scheduler
+8. Which scenario is suggested for discussing a hardening strategy?
+A) Multi-tenant container host or IoT gateway*
+B) Desktop gaming
+C) Offline video editing
+D) Printing on multiple printers
 
-9. Which kernel version range is mentioned for evaluating mitigations?
-A) 3.x or 4.x kernel
-B) 5.x or 6.x kernel*
-C) 2.6.x kernel
-D) 1.x or 2.x kernel
+9. Why is Linux kernel security a "permanent concern"?
+A) Because it makes the kernel slower
+B) Because of constant pressure from new attack vectors*
+C) Because it complicates the UI
+D) Because it simplifies the installation of Windows
 
-10. What does AppArmor provide as an LSM framework?
-A) Hardware-based memory encryption for kernel data
-B) Mandatory access control through path-based security profiles*
-C) Cryptographic signing of all kernel modules
-D) System call interception using BPF programs only
+10. What type of study is recommended in the methodology for understanding mitigations?
+A) Systematic comparison of hardening features and performance*
+B) A/B testing on live users
+C) Manual code review of the entire kernel
+D) Power-off tests
