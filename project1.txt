@@ -52,7 +52,6 @@ B) Overhead, safety, and maintainability*
 C) GUI rendering performance
 D) File system inode counts
 
-
 10. Which benchmarking dimension is specifically mentioned for evaluating eBPF programs?
 A) Screen resolution and refresh rate
 B) Disk sector size and RPM

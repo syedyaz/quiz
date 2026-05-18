@@ -1,47 +1,5 @@
-1. What is the main function of an operating system?
-A) Running anti-virus
-B) Managing computer hardware and software resources*
-C) Playing multimedia files
-D) Editing text documents
-
-2. Which of the following is an open-source operating system?
-A) Windows 11
-B) macOS
-C) Linux*
-D) iOS
-
-3. In computer science, what does GUI stand for?
-A) Graphical User Interface*
-B) General Utility Interface
-C) Graphics Unifying Integration
-D) Graphical Universal Internet
-
-4. Which layer of the OSI model does a router primarily operate on?
-A) Physical Layer
-B) Data Link Layer
-C) Network Layer*
-D) Application Layer
-
-5. What is the time complexity of a binary search algorithm in the worst-case scenario?
-A) O(1)
-B) O(n)
-C) O(n log n)
-D) O(log n)*
-
-6. Which software is an example of a web browser?
-A) Adobe Photoshop
-B) Mozilla Firefox*
-C) Microsoft Word
-D) VLC Media Player
-
-7. Which key feature sets React apart from traditional DOM manipulation?
-A) Two-way data binding
-B) Virtual DOM*
-C) Direct SQL queries
-D) Machine Learning integration
-
-8. Which HTML tag is used to create a hyperlink?
-A) <a>*
-B) <link>
-C) <href>
-D) <nav>
+1. What is the difference between a CPU-bound process and an I/O-bound process?
+2. Under what two circumstances does a non-preemptive scheduling algorithm make scheduling decisions?
+3. List three common criteria used to optimize CPU scheduling algorithms.
+4. Why do threads of the same process often need to be synchronized?
+5. Explain what a race condition is in the context of process or thread synchronization.
