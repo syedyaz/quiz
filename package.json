@@ -1,9 +1,9 @@
 {
-  "name": "pb",
+  "name": "Quiz",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://syedyaz.github.io/mcq-app",
+  "homepage": "https://syedyaz.github.io/Quiz",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
