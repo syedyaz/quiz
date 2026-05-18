@@ -16,13 +16,39 @@ function App() {
 
   // Parse custom text format into JSON
   const parseQuestions = (text) => {
-    const lines = text.split('\n').map(l => l.trim()).filter(l => l);
-    const parsed = lines.map(line => {
-      const questionText = line.replace(/^\d+\.\s*/, '');
-      return {
+    // Split by double newlines or similar to get blocks
+    const rawBlocks = text.split(/\n\s*\n/);
+    const parsed = [];
+
+    rawBlocks.forEach((block) => {
+      const lines = block.trim().split('\n').map(l => l.trim()).filter(l => l);
+      if (lines.length === 0) return; // Need at least a question
+
+      const questionText = lines[0].replace(/^\d+\.\s*/, ''); // Remove numbering if present
+      const options = [];
+      let correctIndex = -1;
+
+      for (let i = 1; i < lines.length; i++) {
+        let optText = lines[i];
+        const isCorrect = optText.endsWith('*');
+        
+        if (isCorrect) {
+          optText = optText.slice(0, -1).trim(); // Remove the asterisk
+          correctIndex = i - 1;
+        }
+        
+        // Optionally remove "A) " or "A. " prefixes
+        optText = optText.replace(/^[A-Z][\.\)]\s*/, '');
+        
+        options.push(optText);
+      }
+
+      parsed.push({
         question: questionText,
-        options: []
-      };
+        options,
+        correctIndex,
+        isShortAnswer: options.length === 0
+      });
     });
     return parsed;
   };
@@ -78,7 +104,14 @@ function App() {
     return `${m}:${s}`;
   };
 
-  const handleAnswerChange = (e) => {
+  const handleSelectAnswer = (optionIndex) => {
+    setAnswers({
+      ...answers,
+      [currentIndex]: optionIndex
+    });
+  };
+
+  const handleTextAnswerChange = (e) => {
     setAnswers({
       ...answers,
       [currentIndex]: e.target.value
@@ -87,7 +120,7 @@ function App() {
 
   const clearResponse = () => {
     const newAnswers = { ...answers };
-    newAnswers[currentIndex] = '';
+    delete newAnswers[currentIndex];
     setAnswers(newAnswers);
   };
 
@@ -161,22 +194,42 @@ function App() {
   }
 
   if (appState === 'result') {
-    // No automatic scoring for short answer questions
+    let score = 0;
+    let mcqCount = 0;
+    questions.forEach((q, i) => {
+      if (!q.isShortAnswer) {
+        mcqCount++;
+        if (answers[i] === q.correctIndex) score++;
+      }
+    });
+
+    const percentage = mcqCount > 0 ? Math.round((score / mcqCount) * 100) : 0;
+    const hasMCQs = mcqCount > 0;
 
     const handleDownloadReceipt = () => {
       let content = `=======================================\n`;
-      content += `          QUIZ RESPONSE SHEET          \n`;
+      content += `          SCORE REPORT / RECEIPT       \n`;
       content += `=======================================\n\n`;
       content += `Student Name: ${studentName}\n`;
       content += `Registration ID: ${registrationId}\n`;
       content += `Date Completed: ${new Date().toLocaleString()}\n`;
       content += `Time Taken: ${formatTime(elapsedTime)}\n\n`;
       
-      content += `------- Student Responses -------\n\n`;
+      if (hasMCQs) {
+        content += `Final Score (MCQs): ${score} / ${mcqCount}\n`;
+        content += `Percentage: ${percentage}%\n\n`;
+      }
+      
+      content += `------- Detailed Breakdown -------\n`;
       questions.forEach((q, i) => {
-        const studentAnswer = answers[i] || "Not attempted";
         content += `Q${i+1}: ${q.question}\n`;
-        content += `Answer: ${studentAnswer}\n\n`;
+        if (q.isShortAnswer) {
+           const studentAnswer = answers[i] || "Not attempted";
+           content += `Answer: ${studentAnswer}\n\n`;
+        } else {
+           const isCorrect = answers[i] === q.correctIndex;
+           content += `Status: ${isCorrect ? 'Correct' : 'Incorrect'}\n\n`;
+        }
       });
       content += `=======================================\n`;
 
@@ -184,7 +237,7 @@ function App() {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `${studentName.replace(/\s+/g, '_')}_Response.txt`;
+      a.download = `${studentName.replace(/\s+/g, '_')}_Result.txt`;
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -195,29 +248,54 @@ function App() {
       <div className="app-container">
         <div className="surface">
           <div className="result-summary">
-            <h2>Quiz Submitted Successfully</h2>
+            <h2>Test Completed</h2>
             <div style={{ marginBottom: '1rem', fontSize: '1.1rem' }}>
               <strong>Name:</strong> {studentName} <br/>
               <strong>Registration ID:</strong> {registrationId}
             </div>
             <div className="text-muted">Time taken: {formatTime(elapsedTime)}</div>
+            {hasMCQs && (
+              <>
+                <div className="score-display">
+                  {score} / {mcqCount}
+                </div>
+                <h3>{percentage}% Score on MCQs</h3>
+              </>
+            )}
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginTop: '2rem' }}>
-              <button className="btn btn-success" onClick={handleDownloadReceipt}>Download Response Sheet</button>
+              <button className="btn btn-success" onClick={handleDownloadReceipt}>Download Report</button>
             </div>
-            <p className="text-muted" style={{ marginTop: '1rem' }}>Please download your response sheet and upload it to Google Classroom.</p>
           </div>
 
-          <h3 style={{ marginTop: '3rem', marginBottom: '1.5rem' }}>Your Responses:</h3>
+          <h3 style={{ marginTop: '3rem', marginBottom: '1.5rem' }}>Detailed Review:</h3>
           {questions.map((q, i) => {
-            const notAttempted = !answers[i] || answers[i].trim() === '';
-            return (
-              <div key={i} className="review-item">
-                <div style={{ fontWeight: 600 }}>Q{i+1}. {q.question}</div>
-                <div style={{ marginTop: '1rem', color: 'var(--text-main)', background: 'var(--bg-main)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border)' }}>
-                  {notAttempted ? <em>Not attempted</em> : answers[i]}
+            if (q.isShortAnswer) {
+              const notAttempted = !answers[i] || answers[i].trim() === '';
+              return (
+                <div key={i} className="review-item">
+                  <div style={{ fontWeight: 600 }}>Q{i+1}. {q.question}</div>
+                  <div style={{ marginTop: '1rem', color: 'var(--text-main)', background: 'var(--bg-main)', padding: '1rem', borderRadius: '4px', border: '1px solid var(--border)' }}>
+                    Your Answer: {notAttempted ? <em>Not attempted</em> : answers[i]}
+                  </div>
                 </div>
-              </div>
-            );
+              );
+            } else {
+              const isCorrect = answers[i] === q.correctIndex;
+              const notAttempted = answers[i] === undefined;
+              return (
+                <div key={i} className={`review-item ${isCorrect ? 'correct' : 'incorrect'}`}>
+                  <div style={{ fontWeight: 600 }}>Q{i+1}. {q.question}</div>
+                  <div style={{ marginTop: '1rem', color: isCorrect ? 'var(--secondary)' : 'var(--danger)' }}>
+                    Your Answer: {notAttempted ? <em>Not attempted</em> : q.options[answers[i]]}
+                  </div>
+                  {!isCorrect && (
+                    <div className="correct-answer">
+                      Correct Answer: {q.options[q.correctIndex]}
+                    </div>
+                  )}
+                </div>
+              );
+            }
           })}
         </div>
       </div>
@@ -240,15 +318,35 @@ function App() {
             {currentQ.question}
           </div>
 
-          <div className="answer-section" style={{ marginTop: '2rem' }}>
-            <textarea
-              className="input-field"
-              style={{ minHeight: '150px', resize: 'vertical' }}
-              placeholder="Type your answer here..."
-              value={answers[currentIndex] || ''}
-              onChange={handleAnswerChange}
-            />
-          </div>
+          {currentQ.isShortAnswer ? (
+            <div className="answer-section" style={{ marginTop: '2rem' }}>
+              <textarea
+                className="input-field"
+                style={{ minHeight: '150px', resize: 'vertical' }}
+                placeholder="Type your answer here..."
+                value={answers[currentIndex] || ''}
+                onChange={handleTextAnswerChange}
+              />
+            </div>
+          ) : (
+            <div className="options-list">
+              {currentQ.options.map((opt, i) => (
+                <label 
+                  key={i} 
+                  className={`option-label ${answers[currentIndex] === i ? 'selected' : ''}`}
+                >
+                  <input
+                    type="radio"
+                    name="option"
+                    className="option-input"
+                    checked={answers[currentIndex] === i}
+                    onChange={() => handleSelectAnswer(i)}
+                  />
+                  {opt}
+                </label>
+              ))}
+            </div>
+          )}
 
           <div className="nav-buttons">
             <button 
