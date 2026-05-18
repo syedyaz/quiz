@@ -1,0 +1,9 @@
+1. What is the difference between a CPU-bound process and an I/O-bound process?
+
+2. Under what two circumstances does a non-preemptive scheduling algorithm make scheduling decisions?
+
+3. List three common criteria used to optimize CPU scheduling algorithms.
+
+4. Why do threads of the same process often need to be synchronized?
+
+5. Explain what a race condition is in the context of process or thread synchronization.
