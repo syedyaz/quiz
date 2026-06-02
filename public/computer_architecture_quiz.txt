@@ -1,103 +1,19 @@
-Time Limit: 30 minutes
-Topics: Instruction-Level Parallelism and Its Exploitation, Data-Level Parallelism in Vector, SIMD, and GPU Architectures
-Reference: Computer Architecture: A Quantitative Approach, Sixth Edition by Patterson & Hennessy
-
 1. What is the primary goal of instruction-level parallelism (ILP), and name two hardware techniques used to exploit it?
-
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
 
 2. Explain the difference between a true data dependence (RAW hazard) and an anti-dependence (WAR hazard). Provide an example of each.
 
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-
 3. What is a control hazard, and describe one method used to reduce the performance penalty caused by branch instructions?
-
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
 
 4. Define what a superscalar processor is and explain how it differs from a pipelined processor in terms of instruction throughput.
 
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-
 5. Briefly explain how out-of-order execution can improve performance while maintaining the correct program semantics.
-
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
 
 6. What problem does register renaming solve in superscalar and out-of-order processors? Give a concrete example.
 
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-
 7. Explain what a vector instruction is and how it differs from scalar instructions in terms of performance efficiency for data-parallel workloads.
-
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
 
 8. Describe the SIMD execution model and provide an example of a modern SIMD architecture or instruction set extension.
 
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-
 9. What is the key advantage of GPU architectures for data-level parallelism compared to CPUs? Briefly describe the thread hierarchy in GPUs.
 
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-
 10. Why is memory bandwidth a critical bottleneck in vector and GPU architectures, and what techniques can be used to mitigate this issue?
-
-[Student Response Space]
-______________________________________________________________________________
-
-______________________________________________________________________________
-
-______________________________________________________________________________
-
