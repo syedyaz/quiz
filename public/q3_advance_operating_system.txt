@@ -1,22 +1,9 @@
-1. Explain **two major problems** that arise from using segmentation for memory management. For each problem, briefly describe how **paging** addresses or solves it.
+1. Explain two major problems that arise from using segmentation for memory management. For each problem, briefly describe how paging addresses or solves it.
 
-2. Given a 32-bit virtual address with a 4KB page size:
-- What is the size of the offset field in bits?
-- How many virtual pages can exist in the address space?
-- If each page table entry (PTE) is 4 bytes, what is the minimum size of a single-level page table?
+2. Given a 32-bit virtual address with a 4KB page size, what is the size of the offset field in bits, how many virtual pages can exist in the address space, and what is the minimum size of a single-level page table if each page table entry (PTE) is 4 bytes?
 
-3. A two-level page table uses 10-bit indices for both Level 1 and Level 2 tables with a 12-bit offset.
-a) How many entries** are in each level of the page table?  
-b) Why is a two-level page table better than a single-level page table** in terms of memory usage, even though you have two levels?  
-c) What is the trade-off** when using multi-level page tables?
+3. A two-level page table uses 10-bit indices for both Level 1 and Level 2 tables with a 12-bit offset. How many entries are in each level of the page table, why is a two-level page table better than a single-level page table in terms of memory usage, and what is the trade-off when using multi-level page tables?
 
-4. Explain the following with respect to TLB operations:
-a) What is a TLB and why is it necessary? 
-b) What happens during a TLB hit vs. a TLB miss?  
-c) What problem occurs during a context switch with the TLB, and how can it be solved?
+4. Explain the following with respect to TLB operations: what is a TLB and why is it necessary, what happens during a TLB hit versus a TLB miss, and what problem occurs during a context switch with the TLB and how can it be solved?
 
-5. Compare and contrast **two of the following** paging schemes used in real systems:
-- SV39 (RISC-V)** - Three-level page tables
-- IA-32 (Intel 32-bit)** - Segmentation + Paging
-- Hashed Page Tables
-- Inverted Page Tables
+5. Compare and contrast two of the following paging schemes used in real systems: SV39 (RISC-V), IA-32 (Intel 32-bit) Segmentation + Paging, Hashed Page Tables, or Inverted Page Tables. For each chosen scheme, discuss how it structures page tables and provide at least one advantage and one disadvantage.
