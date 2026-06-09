@@ -6,17 +6,17 @@
 - If each page table entry (PTE) is 4 bytes, what is the minimum size of a single-level page table?
 
 3. A two-level page table uses 10-bit indices for both Level 1 and Level 2 tables with a 12-bit offset.
-a) **How many entries** are in each level of the page table?  
-b) **Why is a two-level page table better than a single-level page table** in terms of memory usage, even though you have two levels?  
-c) **What is the trade-off** when using multi-level page tables?
+a) How many entries** are in each level of the page table?  
+b) Why is a two-level page table better than a single-level page table** in terms of memory usage, even though you have two levels?  
+c) What is the trade-off** when using multi-level page tables?
 
 4. Explain the following with respect to TLB operations:
-a) What is a TLB and why is it necessary?**  
-b) What happens during a TLB hit vs. a TLB miss?**  
-c) What problem occurs during a context switch with the TLB, and how can it be solved?**
+a) What is a TLB and why is it necessary? 
+b) What happens during a TLB hit vs. a TLB miss?  
+c) What problem occurs during a context switch with the TLB, and how can it be solved?
 
 5. Compare and contrast **two of the following** paging schemes used in real systems:
 - SV39 (RISC-V)** - Three-level page tables
 - IA-32 (Intel 32-bit)** - Segmentation + Paging
-- Hashed Page Tables**
-- Inverted Page Tables**
+- Hashed Page Tables
+- Inverted Page Tables
