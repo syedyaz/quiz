@@ -7,7 +7,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [elapsedTime, setElapsedTime] = useState(0);
-  const [timeLeft, setTimeLeft] = useState(15 * 60); // 30 minutes in seconds
+  const [timeLeft, setTimeLeft] = useState(30 * 60); // 30 minutes in seconds
   const [error, setError] = useState(null);
   
   // Student Identity State
