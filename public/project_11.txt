@@ -1,0 +1,19 @@
+1. What are the key differences between centralized anomaly detection and federated learning approaches in edge computing, and why is federated learning preferable for privacy-sensitive distributed systems?
+
+2. Explain how the FedAvg (Federated Averaging) algorithm aggregates model updates from multiple edge nodes, and why sharing only gradients instead of raw data preserves privacy.
+
+3. List three concrete anomaly detection problems suitable for federated learning in edge environments (e.g., network intrusion detection, hardware fault detection, resource exhaustion), and explain why each benefits from a decentralized approach.
+
+4. Describe the training process in a federated learning pipeline: how do edge nodes train local models, what updates are sent to the central aggregator, and how is the global model updated across rounds?
+
+5. What are the differences between FedAvg and FedProx algorithms, and in what scenarios would FedProx be preferable for anomaly detection on heterogeneous edge devices with non-IID (non-independent and identically distributed) data?
+
+6. Define three key evaluation metrics for a federated anomaly detection system (detection accuracy, false positive rate, communication overhead), and explain why each is critical for production deployment.
+
+7. How would you measure convergence speed in federated learning, and what factors (e.g., number of edge nodes, local epochs, communication rounds) would affect convergence in an anomaly detection task?
+
+8. Explain the privacy-accuracy tradeoff in federated learning: how does differential privacy or gradient compression impact model accuracy, and how would you choose privacy parameters for your anomaly detection system?
+
+9. Design an experiment comparing a federated learning anomaly detector against a centralized baseline (e.g., collecting all data at a central node), including metrics for detection performance, communication cost, and latency.
+
+10. What are the practical challenges of deploying federated anomaly detection on resource-constrained edge devices (limited CPU, memory, bandwidth), and how would you optimize the federated learning pipeline to meet these constraints?

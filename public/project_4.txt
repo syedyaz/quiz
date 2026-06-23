@@ -1,0 +1,19 @@
+1. What are the three main TEE architectures (Intel SGX, AMD SEV, ARM TrustZone), and how do their threat models differ in terms of what an untrusted OS can and cannot observe?
+
+2. Explain the difference between local attestation and remote attestation in TEE systems, and why remote attestation is critical for cloud-based confidential computing scenarios.
+
+3. List three fundamental limitations of current TEE technologies (e.g., memory constraints, side-channel vulnerabilities, performance overhead), and describe how each impacts practical deployment.
+
+4. What is the role of the OS kernel in managing TEE enclave lifecycle, including enclave creation, memory allocation, context switching, and termination?
+
+5. Describe how a LibOS approach (e.g., Gramine, Occlum) handles system calls and I/O operations from within an enclave without trusting the host OS, and what performance tradeoffs this introduces.
+
+6. Explain the challenge of memory management in TEEs: why is EPC (Enclave Page Cache) exhaustion a concern, and how do paging mechanisms impact security and performance?
+
+7. For a confidential container use case running on a cloud platform, design a threat model that identifies which components (hypervisor, host OS, network) are trusted and untrusted, and justify your assumptions.
+
+8. What are the key steps in an attestation flow for a confidential container deployed on a remote cloud provider, and how does the tenant verify the integrity of the TEE and OS stack?
+
+9. Discuss the practical deployment challenges of using TEEs for secure key management in edge nodes, including considerations for key provisioning, attestation latency, and hardware heterogeneity.
+
+10. How would you evaluate the security-performance tradeoff of running a privacy-preserving computation workload in a TEE versus distributing it across multiple non-confidential containers with cryptographic protocols?

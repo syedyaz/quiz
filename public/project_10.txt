@@ -1,0 +1,19 @@
+1. What are the key design differences between a unikernel and a traditional general-purpose OS, and how does the single-address-space model of unikernels enable optimization opportunities unavailable in Linux?
+
+2. List three representative unikernel or library OS projects (e.g., MirageOS, IncludeOS, Unik), and describe the primary language runtime or application domain each was designed to support.
+
+3. Explain why unikernels can achieve faster boot times and smaller memory footprints compared to Linux, and what OS components or abstractions are eliminated to achieve these improvements?
+
+4. For a specific workload (e.g., key-value store, HTTP server, packet processing), define three performance metrics (boot time, memory footprint, throughput) and describe how you would measure them on both a unikernel and a traditional OS.
+
+5. What are the fundamental syscall compatibility challenges that arise when porting an application from Linux to a unikernel, and how do library OS projects like Gramine address this problem?
+
+6. Describe the debugging difficulties that emerge when running a single-address-space unikernel, and explain why traditional kernel debuggers and user-space tools may not apply.
+
+7. Analyze the ecosystem limitation of unikernels: why is driver support sparse compared to Linux, and what implications does this have for deploying unikernels on heterogeneous hardware?
+
+8. Propose a use case (e.g., edge node, FaaS runtime, IoT device, packet processing appliance) where a unikernel offers clear advantages, and justify your choice with specific performance or security benefits.
+
+9. Design a migration path for moving an existing application from Linux to a unikernel, including steps for identifying incompatibilities, refactoring code, and validating correctness.
+
+10. Discuss the practical tradeoffs of adopting a unikernel for your proposed use case: what operational, security, and development overhead would you incur, and under what conditions would the benefits outweigh the costs?

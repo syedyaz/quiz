@@ -1,0 +1,19 @@
+1. What is the primary difference between container startup time and MicroVM startup time, and what architectural factors account for this difference?
+
+2. Explain how memory footprint varies between container runtimes (e.g., Docker, containerd) and MicroVM hypervisors (e.g., Firecracker, Cloud Hypervisor) on resource-constrained edge devices.
+
+3. List three key I/O performance metrics you would measure when benchmarking containers versus MicroVMs, and why each is critical for edge/IoT applications.
+
+4. Describe the security boundary differences between container-based isolation and MicroVM-based isolation in terms of kernel attack surface and process separation.
+
+5. What are the isolation guarantees provided by Linux namespaces and cgroups, and how do they compare to the isolation model enforced by a Type-2 hypervisor like KVM?
+
+6. Explain the tradeoff between multi-tenancy security requirements and performance overhead when choosing between containers and MicroVMs for edge deployments.
+
+7. For a latency-critical IoT application with strict memory constraints, what decision criteria would guide the selection between container and MicroVM technologies?
+
+8. How would you design a hybrid approach that combines containers and MicroVMs, and what workload characteristics would make this strategy preferable to a single-technology solution?
+
+9. What are the maintenance and operational challenges of managing both container and MicroVM runtimes on the same edge infrastructure?
+
+10. How would you evaluate whether the security benefits of MicroVM isolation justify the increased overhead and complexity compared to hardened container runtimes for a specific edge/IoT use case?

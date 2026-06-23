@@ -1,0 +1,19 @@
+1. What are the three primary use cases of eBPF in production Kubernetes environments, and what observability gaps do they currently leave unfilled?
+
+2. How does eBPF's in-kernel execution model provide advantages over user-space monitoring agents in terms of overhead and data collection accuracy?
+
+3. Describe the process of designing an eBPF program to capture per-process cache behavior metrics, including which kernel tracepoints or kprobes you would instrument.
+
+4. What is the difference between using eBPF helpers versus direct kernel data structure access, and what safety implications does each approach have?
+
+5. Explain how an eBPF-based scheduling hint mechanism could communicate feedback to the Linux Completely Fair Scheduler (CFS) without requiring modifications to core scheduler code.
+
+6. List three metrics that an application-specific eBPF framework should capture to characterize I/O patterns in a process, and why each is important for scheduling decisions.
+
+7. What are the main safety concerns when using eBPF programs to access kernel memory, and how does the eBPF verifier mitigate these risks?
+
+8. Compare the maintainability and update cycles of eBPF-based observability versus traditional kernel modules in the context of kernel version compatibility.
+
+9. How would you measure the runtime overhead of an eBPF-based framework compared to traditional in-kernel instrumentation, and what metrics would you collect?
+
+10. What are the limitations of using eBPF for real-time scheduler feedback, and how would you design a fallback mechanism for scenarios where eBPF-assisted hints are insufficient or unsafe?

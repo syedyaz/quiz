@@ -1,0 +1,19 @@
+1. What are the key differences between traditional DRAM and persistent memory (PMEM) in terms of latency, throughput, durability, and how do these characteristics influence file system design?
+
+2. Explain the Direct Access (DAX) programming model and how it enables applications to bypass the page cache and directly access PMEM-backed files, and what safety guarantees must be maintained.
+
+3. List three existing PMEM-aware file systems (e.g., NOVA, ext4-DAX, XFS-DAX), and describe one key design difference between any two of them in terms of metadata organization or consistency mechanisms.
+
+4. What is the fundamental consistency challenge in PMEM file systems, and why is write ordering critical for crash-safety when data can persist across power failures?
+
+5. Describe how a PMEM-aware file system ensures atomicity of metadata updates (e.g., inode modifications, extent tree changes) without relying on traditional journaling, and what primitives (e.g., clflush, clwb) does it use?
+
+6. Compare the crash-safety approaches used by two PMEM file systems: for example, explain how NOVA uses lightweight logging differently from how ext4-DAX uses journaling on PMEM.
+
+7. Design a simplified PMEM allocator that tracks free blocks and ensures consistency after a crash; what data structures would you use, and how would you guarantee their atomicity?
+
+8. Explain the implications of PMEM for the virtual memory subsystem: how should the page cache interact with DAX-enabled file systems, and what happens when PMEM pages are mapped directly into user space?
+
+9. What are the challenges of implementing a minimal journaling or undo-logging scheme for PMEM, and how would you evaluate its correctness under various failure scenarios (e.g., crash during write, power loss during flush)?
+
+10. Discuss how PMEM changes application programming models: what new opportunities and pitfalls arise when applications can directly persist data structures to PMEM without explicit I/O operations?

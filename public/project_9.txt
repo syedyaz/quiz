@@ -1,0 +1,19 @@
+1. What are the three primary categories of kernel hardening features (address space layout randomization, control flow protection, memory safety), and how does each prevent or complicate different classes of kernel exploits?
+
+2. Explain how KASLR (Kernel Address Space Layout Randomization) raises the bar for kernel exploitation, and why information disclosure vulnerabilities become critical when KASLR is enabled.
+
+3. List three kernel hardening mechanisms (e.g., stack canaries, CFI, shadow stacks) and describe which type of kernel vulnerability (buffer overflow, use-after-free, ROP gadget chains) each mechanism is designed to prevent.
+
+4. Compare the security guarantees and performance overhead of LSM frameworks (SELinux, AppArmor) versus capability-based access control, and explain when each approach is more suitable for protecting kernel operations.
+
+5. Describe the attack surface exposed by cache side-channels in modern processors (e.g., Spectre, Meltdown), and explain why kernel isolation is critical for mitigating these attacks in multi-tenant environments.
+
+6. What are the key differences between Spectre and Meltdown in terms of their root cause, attack mechanism, and corresponding kernel mitigations (e.g., KPTI, retpolines, IBRS)?
+
+7. Design an experiment to measure the performance overhead of a specific kernel mitigation (e.g., KPTI, retpolines, or stack canaries) on a Linux 5.x or 6.x kernel, and define which workloads would be most impacted.
+
+8. Explain the concept of Control Flow Integrity (CFI) in the kernel: how does it detect and prevent unauthorized jumps or function calls, and what is the performance cost of shadow stacks or other CFI implementations?
+
+9. For a recent kernel exploit family (e.g., use-after-free or integer overflow), analyze which hardening features would have prevented or mitigated the vulnerability, and discuss any bypasses that attackers might employ.
+
+10. Discuss the tradeoff between security and performance when enabling comprehensive kernel hardening: how would you prioritize mitigations for a production system, and what metrics would guide your decisions?

@@ -1,0 +1,19 @@
+1. What are the key advantages of using deep reinforcement learning for job scheduling compared to traditional heuristic-based schedulers like FIFO or fair-share algorithms?
+
+2. Explain how predictive scaling using machine learning can reduce energy consumption and latency in data center workloads, and what input features would an ML model need to make accurate predictions.
+
+3. List three OS subsystems where ML-based optimization has shown promise (e.g., memory prefetching, cache partitioning), and describe how each improves system performance.
+
+4. For a concrete problem like batch job scheduling in a data center, define three key metrics (throughput, latency, power) that an ML-based solution should optimize, and explain the potential tradeoffs between them.
+
+5. What are the differences between training an ML model offline versus online (continual learning) for resource management, and which approach is more suitable for dynamic data center environments?
+
+6. Describe how you would design a simulation framework using SimGrid or a discrete event simulator to evaluate an ML-based scheduling policy against baseline policies, including what data you would collect.
+
+7. Explain the challenge of feature engineering for ML-based schedulers: what job characteristics, system state, and resource availability metrics should be included in the model's input representation?
+
+8. What are the computational overhead and latency requirements for running ML inference (e.g., neural network predictions) within a kernel scheduler, and how would these constraints affect model complexity?
+
+9. Discuss the feasibility of deploying an ML-based resource manager in production kernels, including challenges related to model updates, interpretability, and failure modes.
+
+10. How would you validate that an ML-based scheduling solution generalizes to unseen workloads and hardware configurations, and what safeguards would ensure it doesn't degrade performance compared to baseline policies?

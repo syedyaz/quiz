@@ -1,0 +1,19 @@
+1. What are the three main categories of offloading and placement strategies (reactive, model-based, learning-based) in multi-tier edge-fog-cloud systems, and what are the key advantages and limitations of each approach?
+
+2. Explain the difference between reactive threshold-based offloading and predictive offloading: why would a predictive approach reduce latency violations in a system with variable workload and network conditions?
+
+3. Define a formal problem statement for workload placement in a multi-tier system, including decision variables (where to place each task), constraints (latency SLOs, tier capacity limits), and the objective function you would optimize.
+
+4. For a concrete scenario (e.g., IoT streaming, video analytics, microservice chains), describe the workload characteristics (arrival rate, processing time, data size) and the heterogeneous tier properties (latency, capacity, cost) that must be modeled.
+
+5. List three types of input state information needed by an offloading policy (workload profile, network state, tier capacities), and explain why each is critical for making effective placement decisions.
+
+6. Compare two placement strategies: a latency-aware greedy algorithm versus a reinforcement learning agent trained on historical workload patterns; what are the tradeoffs in terms of optimality, adaptability, and computational overhead?
+
+7. Design an experiment using a discrete event simulator (e.g., custom simulator, iFogSim, EdgeCloudSim) to evaluate an offloading policy, including how you would model task arrivals, network delays, and tier processing times.
+
+8. Define four evaluation metrics for comparing offloading policies: end-to-end latency, deadline miss rate, bandwidth usage, and energy/cost; explain why each metric matters for different deployment scenarios.
+
+9. Describe three baseline strategies (all at edge, all at cloud, random placement) that you would compare against your proposed policy, and explain what insights each comparison would provide.
+
+10. Discuss the feasibility of deploying a predictive offloading policy on real edge platforms (e.g., Kubernetes Edge, K3s, ETSI MEC), including challenges such as prediction accuracy, state synchronization overhead, and compatibility with existing orchestration frameworks.

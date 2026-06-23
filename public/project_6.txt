@@ -1,0 +1,19 @@
+1. What are the three primary OS/runtime techniques used by major FaaS platforms (AWS Lambda, OpenFaaS, Knative) to achieve fast function startup, and which technique introduces the least overhead?
+
+2. Explain the difference between cold start latency (fresh container/function initialization) and warm start latency (function reuse from a pool), and why this distinction is critical for serverless platform design.
+
+3. List three isolation mechanisms used in FaaS platforms (e.g., OS-level namespaces, containers, microVMs), and discuss the tradeoff between isolation strength and startup time for each.
+
+4. Compare the snapshotting approach versus the fresh-start approach for reducing cold start latency in serverless functions: what are the benefits and limitations of each strategy?
+
+5. Describe how container reuse pools reduce cold start latency in serverless platforms, and what security or resource isolation challenges arise from reusing the same container across multiple function invocations?
+
+6. Explain the concept of a minimal kernel or unikernel approach for serverless functions, and how reducing kernel surface area could improve both startup time and security.
+
+7. For an OS-level checkpoint/restore mechanism designed for serverless functions, what state must be captured and restored, and how would you ensure correctness when restoring functions with different environments or input parameters?
+
+8. Design an experiment to measure cold start latency, warm start latency, and memory footprint for an HTTP-triggered function workload across different isolation technologies (containers vs microVMs vs unikernels).
+
+9. What are the scalability challenges of maintaining prewarmed function pools in a multi-tenant serverless platform, and how would you balance resource utilization with the ability to handle sudden traffic spikes?
+
+10. Discuss the security implications of aggressive function reuse and resource pooling in serverless platforms: what cross-function attack vectors could emerge, and how would OS-level mechanisms mitigate them?

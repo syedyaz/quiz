@@ -1,0 +1,19 @@
+1. What are the three main CPU power management techniques in modern OS kernels (CPU governors, idle states, DVFS), and how does each contribute to reducing energy consumption while maintaining performance?
+
+2. Explain the difference between C-states (idle states) and P-states (performance states) in CPU power management, and describe the tradeoff between entering deeper sleep states and wake-up latency.
+
+3. List three key characteristics of heterogeneous processor architectures (e.g., ARM big.LITTLE), and explain how the OS scheduler must adapt to efficiently utilize efficiency cores versus performance cores for energy optimization.
+
+4. What is the Energy-Delay Product (EDP) metric, why is it more informative than energy consumption alone, and how would you measure it at the process level in an OS?
+
+5. Describe how RAPL (Running Average Power Limit) on x86 processors enables fine-grained power measurement, and what are the limitations of using RAPL for per-process or per-task energy attribution?
+
+6. Design an energy-aware scheduler that makes task placement decisions based on core type (efficiency vs. performance) and current workload, and define the objective function it should optimize.
+
+7. Explain the concept of batch consolidation for energy optimization: how does grouping tasks together and allowing other cores to enter deep idle states reduce overall system energy, and what are the latency tradeoffs?
+
+8. For GPU power management in an OS, what are the challenges of balancing compute throughput with energy efficiency, and how do current GPU scheduling mechanisms address this problem?
+
+9. Describe an experiment to measure the energy savings of an energy-aware scheduler compared to the default OS behavior on real heterogeneous hardware; what metrics would you collect and how would you ensure fair comparison?
+
+10. What are the practical challenges of deploying energy-aware policies in production OS kernels, including considerations for compatibility, predictability, and the need to balance energy efficiency with application performance SLAs?
