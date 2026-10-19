@@ -9,6 +9,8 @@ function App() {
   const [elapsedTime, setElapsedTime] = useState(0);
   const [timeLeft, setTimeLeft] = useState(30 * 60); // 30 minutes in seconds
   const [error, setError] = useState(null);
+  // Optional per-quiz settings from '#key: value' lines at the top of the test file
+  const [config, setConfig] = useState({ title: '', minutes: 30, marks: null });
   
   // Student Identity State
   const [studentName, setStudentName] = useState('');
@@ -23,6 +25,7 @@ function App() {
     rawBlocks.forEach((block) => {
       const lines = block.trim().split('\n').map(l => l.trim()).filter(l => l);
       if (lines.length === 0) return; // Need at least a question
+      if (lines.every(l => l.startsWith('#'))) return; // settings block, read separately
 
       const questionText = lines[0].replace(/^\d+\.\s*/, ''); // Remove numbering if present
       const options = [];
@@ -69,6 +72,16 @@ function App() {
         if (parsed.length === 0) {
           throw new Error("No valid questions found in the file.");
         }
+        const cfg = { title: '', minutes: 30, marks: null };
+        text.split('\n').map(l => l.trim()).filter(l => /^#\s*\w+\s*:/.test(l)).forEach(l => {
+          const m = l.match(/^#\s*(\w+)\s*:\s*(.*)$/);
+          const key = m[1].toLowerCase(), val = m[2].trim();
+          if (key === 'title') cfg.title = val;
+          if (key === 'time' && Number(val) > 0) cfg.minutes = Number(val);
+          if (key === 'marks' && Number(val) > 0) cfg.marks = Number(val);
+        });
+        setConfig(cfg);
+        setTimeLeft(Math.round(cfg.minutes * 60));
         setQuestions(parsed);
         setAppState('start');
       })
@@ -97,6 +110,8 @@ function App() {
     }
     return () => clearInterval(timer);
   }, [appState]);
+
+  const fmtMarks = (n) => String(Math.round(n * 100) / 100);
 
   const formatTime = (seconds) => {
     const m = Math.floor(seconds / 60).toString().padStart(2, '0');
@@ -151,9 +166,13 @@ function App() {
     return (
       <div className="app-container">
         <div className="surface text-center" style={{ maxWidth: '600px', margin: '0 auto' }}>
-          <h1 className="text-primary">Online Computer Based Test</h1>
+          <h1 className="text-primary">{config.title || 'Online Computer Based Test'}</h1>
           <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>
             This quiz contains <strong>{questions.length}</strong> questions.
+            {' '}Time allowed: <strong>{config.minutes} minutes</strong>.
+            {config.marks !== null && (
+              <> Each question carries <strong>{config.marks}</strong> marks (total <strong>{fmtMarks(questions.filter(q => !q.isShortAnswer).length * config.marks)}</strong> marks).</>
+            )}
           </p>
           
           <div style={{ padding: '0 1rem', marginBottom: '2rem' }}>
@@ -205,6 +224,9 @@ function App() {
 
     const percentage = mcqCount > 0 ? Math.round((score / mcqCount) * 100) : 0;
     const hasMCQs = mcqCount > 0;
+    const hasMarks = config.marks !== null;
+    const marksObtained = fmtMarks(score * (config.marks || 0));
+    const marksTotal = fmtMarks(mcqCount * (config.marks || 0));
 
     const handleDownloadReceipt = () => {
       let content = `=======================================\n`;
@@ -215,7 +237,11 @@ function App() {
       content += `Date Completed: ${new Date().toLocaleString()}\n`;
       content += `Time Taken: ${formatTime(elapsedTime)}\n\n`;
       
-      if (hasMCQs) {
+      if (config.title) content = content.replace('SCORE REPORT / RECEIPT       \n', `SCORE REPORT / RECEIPT\n  ${config.title}\n`);
+      if (hasMCQs && hasMarks) {
+        content += `Marks Obtained: ${marksObtained} / ${marksTotal}\n`;
+        content += `Correct Answers: ${score} / ${mcqCount}\n\n`;
+      } else if (hasMCQs) {
         content += `Final Score (MCQs): ${score} / ${mcqCount}\n`;
         content += `Percentage: ${percentage}%\n\n`;
       }
@@ -254,7 +280,15 @@ function App() {
               <strong>Registration ID:</strong> {registrationId}
             </div>
             <div className="text-muted">Time taken: {formatTime(elapsedTime)}</div>
-            {hasMCQs && (
+            {hasMCQs && hasMarks && (
+              <>
+                <div className="score-display">
+                  {marksObtained} / {marksTotal}
+                </div>
+                <h3>Marks obtained ({score} of {mcqCount} correct)</h3>
+              </>
+            )}
+            {hasMCQs && !hasMarks && (
               <>
                 <div className="score-display">
                   {score} / {mcqCount}
