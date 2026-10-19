@@ -1,5 +1,5 @@
 #title: Theory of Automata Quiz (Weeks 1–2)
-#time: 20
+#time: 15
 #marks: 0.5
 
 1. A coin-operated turnstile starts in the Locked state and receives the inputs: coin, push, push, coin, coin, push. In which state does it end?
