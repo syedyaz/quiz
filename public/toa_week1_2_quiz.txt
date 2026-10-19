@@ -1,0 +1,179 @@
+1. A coin-operated turnstile starts in the Locked state and receives the inputs: coin, push, push, coin, coin, push. In which state does it end?
+A) Unlocked
+B) Locked*
+C) It depends on how many people walked through
+D) No state, because the input is invalid
+
+2. Which statement best describes the memory of a finite automaton?
+A) An unbounded tape that it can read and write
+B) A single stack
+C) A counter that can grow without limit
+D) Only its current state, chosen from a finite set of states*
+
+3. Which machine model recognises exactly the context-free languages?
+A) Pushdown automaton*
+B) Finite automaton
+C) Linear bounded automaton
+D) Turing machine
+
+4. Which statement about the Chomsky hierarchy is true?
+A) Every context-free language is regular
+B) Context-sensitive languages are a subset of regular languages
+C) Every regular language is also context-free*
+D) The four classes of languages do not overlap
+
+5. Which of these languages is context-free but NOT regular?
+A) All binary strings ending in 01
+B) Balanced parentheses*
+C) Valid identifiers in C
+D) All strings over {a, b}
+
+6. An automaton accepts exactly the binary strings that end in 1. Which of these strings does it accept?
+A) ε (the empty string)
+B) 110
+C) 10
+D) 1011*
+
+7. In automata theory, what is a language?
+A) A set of strings over an alphabet*
+B) A programming language such as C or Python
+C) A set of rules for building machines
+D) A single string of symbols
+
+8. Which of the following is NOT a valid alphabet?
+A) {0, 1}
+B) {A, C, G, T}
+C) The empty set Ø*
+D) {a, b, c}
+
+9. Let Σ = {a, b} and w = abba. What are |w| and |w|ₐ (the number of a's in w)?
+A) |w| = 4 and |w|ₐ = 4
+B) |w| = 4 and |w|ₐ = 2*
+C) |w| = 2 and |w|ₐ = 2
+D) |w| = 3 and |w|ₐ = 2
+
+10. Which statement about the empty string ε is correct?
+A) ε is a symbol that belongs to every alphabet
+B) The length of ε is 1
+C) Concatenating ε with a string w is undefined
+D) ε is a string of length 0, and it is never a member of the alphabet*
+
+11. Let u = ab and v = baa. What is the concatenation vu?
+A) baaab*
+B) abbaa
+C) aabba
+D) baaba
+
+12. What is the reverse of the string abb?
+A) abb
+B) bab
+C) bba*
+D) bbaa
+
+13. How many prefixes does the string abb have, counting both ε and abb itself?
+A) 3
+B) 4*
+C) 6
+D) 7
+
+14. Which of these is NOT a substring of the string abb?
+A) ε
+B) ab
+C) bb
+D) ba*
+
+15. Which statement is true for all strings u, v and w?
+A) (uv)w = u(vw)*
+B) uv = vu
+C) |uv| = |u| × |v|
+D) uε = ε
+
+16. For the alphabet Σ = {a, b}, how many strings are in Σ³ (all strings of length exactly 3)?
+A) 3
+B) 6
+C) 8*
+D) 9
+
+17. Which equation correctly relates Σ⁺ and Σ*?
+A) Σ⁺ = Σ* ∪ {ε}
+B) Σ⁺ = Σ* − {ε}*
+C) Σ* = Σ⁺ − {ε}
+D) Σ⁺ and Σ* are always equal
+
+18. In shortlex (canonical) order over Σ = {a, b}, which string comes immediately after bb?
+A) ab
+B) ba
+C) bba
+D) aaa*
+
+19. Which string belongs to the language {aⁿbⁿ : n ≥ 0}?
+A) aabb*
+B) ba
+C) aab
+D) abab
+
+20. Which statement correctly describes Ø and {ε}?
+A) They are the same language
+B) Ø contains ε, while {ε} is empty
+C) Ø contains no strings, while {ε} contains exactly one string*
+D) Both contain exactly one string
+
+21. A DFA is written as the 5-tuple M = (Q, Σ, δ, q₀, F). What does F represent?
+A) The transition function
+B) The set of accepting (final) states*
+C) The start state
+D) The input alphabet
+
+22. In a DFA, the statement 'δ is a total function' means:
+A) Every state of the DFA is an accepting state
+B) The DFA has exactly one accepting state
+C) δ is defined only for the start state
+D) δ(q, a) is defined for every state q and every input symbol a*
+
+23. A DFA accepts binary strings with an even number of 1s. Its states are E (even) and O (odd), the start state is E and F = {E}. Which string does it REJECT?
+A) 111*
+B) ε
+C) 11
+D) 0110
+
+24. A DFA accepts strings over {a, b} that contain ab: q0 goes to q1 on a and stays on b; q1 stays on a and goes to q2 on b; q2 loops on a and b. What is the sequence of states for the input bba?
+A) q0, q1, q2, q2
+B) q0, q0, q1, q2
+C) q0, q0, q0, q1*
+D) q0, q1, q1, q1
+
+25. For the same 'contains ab' DFA, what is δ*(q0, bab)?
+A) q0
+B) q1
+C) q2*
+D) It is undefined
+
+26. For any DFA M, when is the empty string ε in L(M)?
+A) When the start state q₀ is an accepting state*
+B) When F is empty
+C) When M has a trap state
+D) When δ(q₀, a) = q₀ for some symbol a
+
+27. What is a trap (dead) state in a DFA?
+A) The start state of the DFA
+B) An accepting state with no outgoing transitions
+C) A state that can be reached only by reading ε
+D) A non-accepting state in which every input symbol loops back to the same state*
+
+28. A complete DFA for 'strings that start with a' over Σ = {a, b} has the states q0, q1 and a trap state qd. How many transitions does its transition function δ have?
+A) 3
+B) 4
+C) 6*
+D) 9
+
+29. A DFA accepts strings over {a, b} that end in ab. Its states mean: q0 = no useful suffix, q1 = ends in a, q2 = ends in ab (accepting). Where does it go from q2 on input a?
+A) q1*
+B) q0
+C) q2
+D) A trap state
+
+30. Using the same 'ends in ab' DFA, which string is accepted?
+A) abb
+B) aba
+C) ba
+D) abaab*
