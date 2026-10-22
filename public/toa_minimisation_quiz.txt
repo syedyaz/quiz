@@ -1,0 +1,63 @@
+#title: Theory of Automata Quiz: DFA Minimisation
+#time: 15
+#marks: 0.5
+
+1. Partition refinement begins with which initial partition P₀ of the states?
+A) One group for each state
+B) Accepting states and non-accepting states: {F, Q − F}*
+C) Reachable states and unreachable states
+D) The start state alone, and all other states
+
+2. In the table-filling method, which pairs of states are marked in round 0?
+A) Every pair consisting of one accepting and one non-accepting state*
+B) Every pair that contains the start state
+C) Every pair of states that go to the same state on every symbol
+D) No pairs; marking begins in round 1
+
+3. A DFA has 6 states. How many cells (pairs of distinct states) does the table-filling table contain?
+A) 36
+B) 30
+C) 6
+D) 15*
+
+4. DFA M over {0, 1}, start A, accepting {C, D, E}: A: 0→B, 1→C; B: 0→A, 1→D; C: 0→E, 1→F; D: 0→E, 1→F; E: 0→E, 1→F; F: 0→F, 1→F. What is the initial partition P₀?
+A) {A, B}, {C, D, E}, {F}
+B) {A, B, C}, {D, E, F}
+C) {A, B, F}, {C, D, E}*
+D) {A}, {B}, {C}, {D}, {E}, {F}
+
+5. DFA M over {0, 1}, start A, accepting {C, D, E}: A: 0→B, 1→C; B: 0→A, 1→D; C: 0→E, 1→F; D: 0→E, 1→F; E: 0→E, 1→F; F: 0→F, 1→F. What is the partition P₁ after the first round of refinement?
+A) {A, B}, {C, D, E}, {F}*
+B) {A}, {B, F}, {C, D, E}
+C) {A, B, F}, {C, D, E}
+D) {A, B}, {C}, {D, E}, {F}
+
+6. DFA M over {0, 1}, start A, accepting {C, D, E}: A: 0→B, 1→C; B: 0→A, 1→D; C: 0→E, 1→F; D: 0→E, 1→F; E: 0→E, 1→F; F: 0→F, 1→F. How many states does the minimal DFA equivalent to M have?
+A) 2
+B) 4
+C) 6
+D) 3*
+
+7. DFA M over {0, 1}, start A, accepting {C, D, E}: A: 0→B, 1→C; B: 0→A, 1→D; C: 0→E, 1→F; D: 0→E, 1→F; E: 0→E, 1→F; F: 0→F, 1→F. What is the shortest string that distinguishes state A from state F?
+A) ε
+B) 1*
+C) 0
+D) 00
+
+8. DFA N over {a, b}, start p, accepting {s}: p: a→q, b→r; q: a→q, b→s; r: a→q, b→r; s: a→q, b→r. Using table-filling, which pair is marked in round 1?
+A) (p, s)
+B) (r, s)
+C) (p, q)*
+D) (p, r)
+
+9. DFA N over {a, b}, start p, accepting {s}: p: a→q, b→r; q: a→q, b→s; r: a→q, b→r; s: a→q, b→r. Using table-filling, which pair of states is never marked, so the two states are equivalent?
+A) (p, r)*
+B) (p, q)
+C) (q, r)
+D) (q, s)
+
+10. DFA K over {a, b}, start x, accepting {z}: x: a→y, b→x; y: a→z, b→x; z: a→z, b→z; t: a→z, b→y. Before merging equivalent states, which state must be removed?
+A) x
+B) y
+C) z
+D) t*
